@@ -1,11 +1,11 @@
 import Image from "next/image"
-
+import image from "public"                                                                                                                      
 export function AboutHeroSection() {
   return (
     <section className="relative h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=500&width=1200"
+          src="/about.webp?height=500&width=1200"
           alt="Pristine lake and forest landscape"
           fill
           className="object-cover brightness-50"

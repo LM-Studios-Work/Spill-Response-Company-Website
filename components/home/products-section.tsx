@@ -54,7 +54,7 @@ export function ProductsSection() {
             <div className="relative">
               <div className="bg-white p-4 rounded-lg shadow-2xl transform rotate-3 z-10 w-72 h-72 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/spillkit.jpeg?height=250&width=250"
                   alt="Spill Kit"
                   width={250}
                   height={250}
@@ -62,7 +62,7 @@ export function ProductsSection() {
                 />
               </div>
               <div className="absolute -top-4 -left-4 bg-accent text-black font-bold rounded-full w-24 h-24 flex items-center justify-center text-center text-xs p-2 shadow-lg z-20">
-                Best Seller 2024
+                Best Seller 2025
               </div>
             </div>
           </div>
