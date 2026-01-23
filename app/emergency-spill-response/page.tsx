@@ -6,6 +6,9 @@ import { IntroSection } from "@/components/spill-response/intro-section"
 import { ServicesGrid } from "@/components/spill-response/services-grid"
 import { ResponseProtocol } from "@/components/spill-response/response-protocol"
 import { CtaBanner } from "@/components/spill-response/cta-banner"
+import { FaqSection } from "@/components/spill-response/faq-section"
+import { ImageIcon } from "lucide-react"
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Emergency Spill Response & Hazmat Recovery | SSSK Environmental Services",
@@ -22,6 +25,10 @@ export default function EmergencySpillResponsePage() {
         <IntroSection />
         <ServicesGrid />
         <ResponseProtocol />
+        
+
+
+        <FaqSection />
         <CtaBanner />
       </main>
       <Footer />

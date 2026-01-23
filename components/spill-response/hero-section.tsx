@@ -3,7 +3,7 @@ export function SpillHeroSection() {
     <section
       className="relative bg-cover bg-center min-h-[600px] flex items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/spill.jpeg?height=600&width=1200')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
     >
       <div className="container mx-auto px-4 py-16 relative z-10">
