@@ -20,7 +20,7 @@ export function WasteHeroSection() {
             efficient waste services for South African industries.
           </p>
           <a
-            href="#"
+            href="/contact"
             className="inline-block bg-accent text-black hover:bg-yellow-400 font-bold py-4 px-8 rounded shadow-lg uppercase tracking-wide transition transform hover:-translate-y-1"
           >
             Get a Quote

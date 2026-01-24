@@ -20,7 +20,7 @@ export function AssessmentHeroSection() {
             compliant, and audit-ready.
           </p>
           <a
-            href="#"
+            href="/contact"
             className="inline-block bg-accent hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:-translate-y-1 text-lg"
           >
             Get Compliance Support

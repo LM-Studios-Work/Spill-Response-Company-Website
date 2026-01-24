@@ -15,7 +15,10 @@ export function PricingCtaBanner() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8">
           <div className="flex items-center gap-2 text-lg sm:text-xl font-bold text-accent">
-            <span className="material-icons">phone</span> Call: 071 788 1312
+            <span className="material-icons">phone</span>
+            <a href="tel:0717881312" className="hover:text-white transition">
+              Call: 071 788 1312
+            </a>
           </div>
           <div className="hidden sm:block text-green-300">|</div>
           <div className="flex items-center gap-2 text-lg sm:text-xl font-bold text-accent">

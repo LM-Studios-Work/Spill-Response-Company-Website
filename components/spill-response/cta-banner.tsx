@@ -12,7 +12,9 @@ export function CtaBanner() {
 
           <div className="mt-4 text-xl md:text-2xl font-bold font-display uppercase">
             Call SSSK Environmental Services Now:{" "}
-            <span className="text-accent">071 788 1312</span>
+            <a href="tel:0717881312" className="text-accent hover:text-yellow-300 transition">
+              071 788 1312
+            </a>
           </div>
         </div>
         <div className="hidden md:block opacity-20">

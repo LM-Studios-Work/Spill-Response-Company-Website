@@ -5,11 +5,25 @@ import { NemaSection } from "@/components/environmental-assessments/nema-section
 import { EiaSection } from "@/components/environmental-assessments/eia-section";
 import { AssessmentCtaBanner } from "@/components/environmental-assessments/cta-banner";
 import { ServicesCarousel } from "@/lib/services-carousel";
- 
-export const metadata = {
-  title: "Environmental Assessments & Regulatory Reporting - SSSK",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Environmental Assessments & Regulatory Reporting | SSSK Environmental Services",
   description:
-    "Navigating the complexities of South African environmental law. We ensure your documentation is accurate, compliant, and audit-ready.",
+    "Expert environmental impact assessments (EIA) and NEMA compliance reporting. Navigate South African environmental law with confidence. Audit-ready documentation.",
+  keywords: [
+    "environmental assessments",
+    "EIA",
+    "NEMA compliance",
+    "environmental reporting",
+    "regulatory compliance",
+  ],
+  openGraph: {
+    title: "Environmental Assessments & Regulatory Reporting",
+    description: "Professional environmental impact assessments and compliance reporting",
+    url: "https://sssksolutions.co.za/environmental-assessments",
+    type: "website",
+  },
 };
 
 export default function EnvironmentalAssessmentsPage() {

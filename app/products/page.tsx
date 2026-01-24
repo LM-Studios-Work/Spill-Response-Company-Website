@@ -7,12 +7,26 @@ import { CleaningProductsSection } from "@/components/products/cleaning-products
 import { TrainingSection } from "@/components/products/training-section";
 import { ProductsCtaBanner } from "@/components/products/cta-banner";
 import { ServicesCarousel } from "@/lib/services-carousel";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title:
-    "Industrial Spill Kits & Containment Products | SSSK Environmental Services",
+export const metadata: Metadata = {
+  title: "Industrial Spill Kits & Containment Products | SSSK Environmental Services",
   description:
-    "Field-proven solutions for rapid spill response. Economical, fast-acting, and compliant with environmental regulations.",
+    "Field-proven spill control solutions including mobile spill kits, absorbents, and bio-remediation agents. Fast-acting, economical, and compliant with environmental regulations.",
+  keywords: [
+    "spill kits",
+    "absorbent products",
+    "spill containment",
+    "industrial supplies",
+    "environmental products",
+    "hazmat supplies",
+  ],
+  openGraph: {
+    title: "Industrial Spill Kits & Containment Products",
+    description: "Premium spill response and containment products",
+    url: "https://sssksolutions.co.za/products",
+    type: "website",
+  },
 };
 
 export default function ProductsPage() {

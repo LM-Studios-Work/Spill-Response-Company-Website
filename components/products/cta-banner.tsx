@@ -10,7 +10,9 @@ export function ProductsCtaBanner() {
         <div className="inline-flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 bg-black/20 backdrop-blur-sm p-6 rounded-lg border border-white/10">
           <div className="text-center md:text-right">
             <p className="text-accent font-bold uppercase text-xs tracking-wider mb-1">Order Now</p>
-            <p className="text-2xl lg:text-3xl font-bold text-white">071 788 1312</p>
+            <a href="tel:0717881312" className="text-2xl lg:text-3xl font-bold text-white hover:text-accent transition">
+              071 788 1312
+            </a>
           </div>
           <div className="hidden md:block h-10 w-px bg-gray-500" />
           <div className="text-center md:text-left">

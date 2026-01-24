@@ -1,0 +1,20 @@
+# Robots.txt for SSSK Environmental Services
+# Allow all search engines to crawl and index
+
+User-agent: *
+Allow: /
+
+# Specific rules for common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow crawling of admin or private sections (if any)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /.next/
+
+# Specify sitemap location
+Sitemap: https://sssksolutions.co.za/sitemap.xml

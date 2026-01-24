@@ -20,7 +20,7 @@ export function TrainingHeroSection() {
             safety.
           </p>
           <a
-            href="#"
+            href="/contact"
             className="inline-block bg-accent hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded shadow-lg transition transform hover:-translate-y-1"
           >
             Book a Training Session

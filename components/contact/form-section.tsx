@@ -415,9 +415,9 @@ export function ContactFormSection() {
                 <p className="text-foreground-muted text-sm mt-1">
                   24/7 Helpline
                 </p>
-                <p className="text-foreground font-medium text-base sm:text-lg">
+                <a href="tel:0717881312" className="text-foreground font-medium text-base sm:text-lg hover:text-primary transition">
                   071 788 1312
-                </p>
+                </a>
               </div>
             </div>
 

@@ -20,7 +20,7 @@ export function PollutionHeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#"
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-md text-secondary bg-accent hover:bg-yellow-400 transition-colors shadow-lg"
             >
               Request an Assessment

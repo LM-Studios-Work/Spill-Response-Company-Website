@@ -9,7 +9,9 @@ export function AssessmentCtaBanner() {
         <p className="text-green-100 text-lg mb-8">Ensure your environmental reporting is accurate and compliant.</p>
         <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-8 py-4">
           <span className="text-green-100 font-medium mr-2">Contact SSSK for Advisory Services:</span>
-          <span className="text-accent font-black text-xl md:text-2xl block md:inline mt-2 md:mt-0">071 788 1312</span>
+          <a href="tel:0717881312" className="text-accent font-black text-xl md:text-2xl block md:inline mt-2 md:mt-0 hover:text-yellow-300 transition">
+            071 788 1312
+          </a>
         </div>
       </div>
     </section>

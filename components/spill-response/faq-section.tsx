@@ -20,7 +20,7 @@ export function FaqSection() {
               What should I do immediately after a hazardous material spill?
             </AccordionTrigger>
             <AccordionContent className="text-foreground-muted leading-relaxed">
-              First, ensure the safety of all personnel and secure the area. Then, immediately call the SSSK 24/7 Emergency Hotline at 071 788 1312. Under Section 30 of NEMA, immediate action is a legal requirement to minimize environmental impact and avoid penalties.
+              First, ensure the safety of all personnel and secure the area. Then, immediately call the SSSK 24/7 Emergency Hotline at <a href="tel:0717881312" className="font-bold text-primary hover:underline">071 788 1312</a>. Under Section 30 of NEMA, immediate action is a legal requirement to minimize environmental impact and avoid penalties.
             </AccordionContent>
           </AccordionItem>
 

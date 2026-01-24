@@ -43,7 +43,7 @@ export function ProductsSection() {
               </li>
             </ul>
             <a
-              href="#"
+              href="/products"
               className="inline-block bg-white text-primary font-bold px-8 py-3 rounded hover:bg-gray-100 transition"
             >
               Shop Products

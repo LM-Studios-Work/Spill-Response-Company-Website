@@ -12,10 +12,25 @@ import Image from "next/image";
 import { ServicesCarousel } from "@/lib/services-carousel";
 
 export const metadata: Metadata = {
-  title:
-    "Emergency Spill Response & Hazmat Recovery | SSSK Environmental Services",
+  title: "24/7 Emergency Spill Response & Hazmat Recovery | SSSK Environmental Services",
   description:
-    "24/7 Emergency Spill Response for Road, Rail, and Industrial incidents across South Africa. NEMA Compliant & ISO Certified.",
+    "Rapid 24/7 emergency spill response for road, rail, and industrial incidents across South Africa. NEMA compliant, ISO certified hazmat remediation. Call 071 788 1312",
+  keywords: [
+    "emergency spill response",
+    "hazmat recovery",
+    "spill cleanup",
+    "24/7 emergency",
+    "NEMA compliance",
+    "road spill",
+    "rail spill",
+    "industrial spill",
+  ],
+  openGraph: {
+    title: "24/7 Emergency Spill Response & Hazmat Recovery",
+    description: "Professional hazmat remediation and spill response services",
+    url: "https://sssksolutions.co.za/emergency-spill-response",
+    type: "website",
+  },
 };
 
 export default function EmergencySpillResponsePage() {

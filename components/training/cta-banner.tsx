@@ -5,7 +5,10 @@ export function TrainingCtaBanner() {
       <p className="text-green-100 mb-6">
         Don&apos;t wait for an accident to find out. Schedule your{" "}
         <span className="text-accent font-bold">Spill Kit Training</span> today:{" "}
-        <strong className="text-white">071 788 1312</strong>.
+        <a href="tel:0717881312" className="text-white font-bold hover:text-accent transition">
+          071 788 1312
+        </a>
+        .
       </p>
       <span className="material-icons text-6xl text-white opacity-20 animate-pulse">shield</span>
     </div>
