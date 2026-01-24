@@ -1,10 +1,12 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { PricingHeroSection } from "@/components/pricing/hero-section"
-import { IntroSection } from "@/components/pricing/intro-section"
-import { PricingTable } from "@/components/pricing/pricing-table"
-import { BenefitsSection } from "@/components/pricing/benefits-section"
-import { PricingCtaBanner } from "@/components/pricing/cta-banner"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { PricingHeroSection } from "@/components/pricing/hero-section";
+import { IntroSection } from "@/components/pricing/intro-section";
+import { PricingTable } from "@/components/pricing/pricing-table";
+import { BenefitsSection } from "@/components/pricing/benefits-section";
+import { PricingCtaBanner } from "@/components/pricing/cta-banner";
+import { ServicesCarousel } from "@/lib/services-carousel";
+
 
 export default function PricingPage() {
   return (
@@ -16,8 +18,9 @@ export default function PricingPage() {
         <PricingTable />
         <BenefitsSection />
         <PricingCtaBanner />
+        <ServicesCarousel />
       </main>
       <Footer />
     </div>
-  )
+  );
 }

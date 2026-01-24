@@ -3,7 +3,7 @@ export function AssessmentHeroSection() {
     <header className="relative bg-primary h-[500px] flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=500&width=1200"
+          src="/about.webp?height=500&width=1200"
           alt="Environmental specialist reviewing documents at site"
           className="w-full h-full object-cover object-top opacity-80"
         />

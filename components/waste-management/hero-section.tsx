@@ -3,7 +3,7 @@ export function WasteHeroSection() {
     <section className="relative h-[600px] flex items-center">
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=600&width=1200"
+          src="/waste.jpg?height=600&width=1200"
           alt="Industrial waste management facility with waste truck"
           className="w-full h-full object-cover"
         />
@@ -16,8 +16,8 @@ export function WasteHeroSection() {
             <br />& Disposal Solutions
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl font-light">
-            Environmentally responsible, cost-effective, and operationally efficient waste services for South African
-            industries.
+            Environmentally responsible, cost-effective, and operationally
+            efficient waste services for South African industries.
           </p>
           <a
             href="#"
@@ -28,5 +28,5 @@ export function WasteHeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

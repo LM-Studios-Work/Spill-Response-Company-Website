@@ -3,7 +3,7 @@ export function TrainingHeroSection() {
     <header className="relative bg-primary h-[600px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=600&width=1200"
+          src="/training.webp?height=600&width=1200"
           alt="Industrial workers in safety gear managing a spill"
           className="w-full h-full object-cover object-center"
         />

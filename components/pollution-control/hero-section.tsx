@@ -3,7 +3,7 @@ export function PollutionHeroSection() {
     <header className="relative bg-secondary overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=600&width=1200"
+          src="/pollution.jpg?height=600&width=1200"
           alt="Environmental specialist conducting water testing in a river"
           className="w-full h-full object-cover opacity-50 mix-blend-overlay"
         />
