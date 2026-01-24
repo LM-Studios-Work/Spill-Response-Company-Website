@@ -9,8 +9,8 @@ export function ProductsHeroSection() {
             Containment Products
           </h1>
           <p className="text-lg text-gray-200 mb-8 max-w-lg">
-            Field-proven solutions for rapid spill response. Economical, fast-acting, and compliant with environmental
-            regulations.
+            Field-proven solutions for rapid spill response. Economical,
+            fast-acting, and compliant with environmental regulations.
           </p>
           <button className="bg-accent hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center">
             Request a Quote
@@ -19,12 +19,12 @@ export function ProductsHeroSection() {
         </div>
         <div className="w-full lg:w-1/2 relative">
           <img
-            src="/placeholder.svg?height=400&width=600"
+            src="/productwal.webp?height=400&width=600"
             alt="Industrial warehouse setting with spill kits"
             className="object-cover w-full h-64 lg:h-96 rounded-lg shadow-2xl opacity-90"
           />
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -54,7 +54,7 @@ export function ProductsSection() {
             <div className="relative">
               <div className="bg-white p-4 rounded-lg shadow-2xl transform rotate-3 z-10 w-72 h-72 flex items-center justify-center">
                 <Image
-                  src="/spillkit.jpeg?height=250&width=250"
+                  src="/spillkit.webp?height=250&width=250"
                   alt="Spill Kit"
                   width={250}
                   height={250}

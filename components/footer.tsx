@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,12 +9,22 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="material-icons text-primary text-2xl sm:text-3xl">eco</span>
-              <h2 className="font-display font-bold text-xl sm:text-2xl uppercase">SSSK Environmental</h2>
+              <h2 className="font-display font-bold text-xl sm:text-2xl uppercase">
+                <Link href="/" className="relative w-28 h-20 block">
+                  <Image
+                    src="/sssklogo.png"
+                    alt="SSSK Environmental Services Logo" // <--- This was missing
+                    fill
+                    className="object-contain"
+                  />
+                </Link>
+                SSSK Environmental
+              </h2>
             </div>
+
             <p className="text-gray-400 mb-4 sm:mb-6 max-w-sm text-sm sm:text-base">
-              Leading the way in environmental protection and hazardous spill remediation. We are committed to safety,
-              compliance, and speed.
+              Leading the way in environmental protection and hazardous spill
+              remediation. We are committed to safety, compliance, and speed.
             </p>
             <p className="text-lg sm:text-xl font-display italic text-accent">
               &quot;Protecting Today. Preserving Tomorrow.&quot;
@@ -22,7 +33,9 @@ export function Footer() {
 
           {/* Navigation Links */}
           <div>
-            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">Navigation</h3>
+            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">
+              Navigation
+            </h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
                 <Link href="/" className="hover:text-accent transition">
@@ -51,25 +64,39 @@ export function Footer() {
               </li>
             </ul>
 
-            <h3 className="font-display font-bold text-base sm:text-lg mb-3 mt-6 uppercase text-gray-300">Services</h3>
+            <h3 className="font-display font-bold text-base sm:text-lg mb-3 mt-6 uppercase text-gray-300">
+              Services
+            </h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link href="/emergency-spill-response" className="hover:text-accent transition">
+                <Link
+                  href="/emergency-spill-response"
+                  className="hover:text-accent transition"
+                >
                   Spill Response
                 </Link>
               </li>
               <li>
-                <Link href="/pollution-control" className="hover:text-accent transition">
+                <Link
+                  href="/pollution-control"
+                  className="hover:text-accent transition"
+                >
                   Pollution Control
                 </Link>
               </li>
               <li>
-                <Link href="/waste-management" className="hover:text-accent transition">
+                <Link
+                  href="/waste-management"
+                  className="hover:text-accent transition"
+                >
                   Waste Management
                 </Link>
               </li>
               <li>
-                <Link href="/environmental-assessments" className="hover:text-accent transition">
+                <Link
+                  href="/environmental-assessments"
+                  className="hover:text-accent transition"
+                >
                   Assessments
                 </Link>
               </li>
@@ -83,7 +110,9 @@ export function Footer() {
 
           {/* Certificates */}
           <div>
-            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">Certificates</h3>
+            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">
+              Certificates
+            </h3>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li>
                 <a
@@ -91,7 +120,9 @@ export function Footer() {
                   download
                   className="flex items-center hover:text-accent transition group"
                 >
-                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">download</span>
+                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">
+                    download
+                  </span>
                   ISO 14001 Certificate
                 </a>
               </li>
@@ -101,7 +132,9 @@ export function Footer() {
                   download
                   className="flex items-center hover:text-accent transition group"
                 >
-                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">download</span>
+                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">
+                    download
+                  </span>
                   NEMA Compliance
                 </a>
               </li>
@@ -111,7 +144,9 @@ export function Footer() {
                   download
                   className="flex items-center hover:text-accent transition group"
                 >
-                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">download</span>
+                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">
+                    download
+                  </span>
                   Waste Management License
                 </a>
               </li>
@@ -121,7 +156,9 @@ export function Footer() {
                   download
                   className="flex items-center hover:text-accent transition group"
                 >
-                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">download</span>
+                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">
+                    download
+                  </span>
                   National Water Act
                 </a>
               </li>
@@ -131,7 +168,9 @@ export function Footer() {
                   download
                   className="flex items-center hover:text-accent transition group"
                 >
-                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">download</span>
+                  <span className="material-icons text-primary mr-2 text-lg group-hover:text-accent">
+                    download
+                  </span>
                   Hazmat Certification
                 </a>
               </li>
@@ -140,28 +179,44 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">Contact Us</h3>
+            <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">
+              Contact Us
+            </h3>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex items-start">
-                <span className="material-icons text-accent mr-3 flex-shrink-0">phone</span>
+                <span className="material-icons text-accent mr-3 flex-shrink-0">
+                  phone
+                </span>
                 <div>
-                  <strong className="block text-white">Emergency Hotline</strong>
-                  <a href="tel:0717881312" className="text-accent font-bold hover:underline">
+                  <strong className="block text-white">
+                    Emergency Hotline
+                  </strong>
+                  <a
+                    href="tel:0717881312"
+                    className="text-accent font-bold hover:underline"
+                  >
                     071 788 1312
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <span className="material-icons text-accent mr-3 flex-shrink-0">email</span>
+                <span className="material-icons text-accent mr-3 flex-shrink-0">
+                  email
+                </span>
                 <div>
                   <strong className="block text-white">Email Support</strong>
-                  <a href="mailto:info@sssksolutions.co.za" className="hover:text-white transition break-all">
+                  <a
+                    href="mailto:info@sssksolutions.co.za"
+                    className="hover:text-white transition break-all"
+                  >
                     info@sssksolutions.co.za
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
-                <span className="material-icons text-accent mr-3 flex-shrink-0">location_on</span>
+                <span className="material-icons text-accent mr-3 flex-shrink-0">
+                  location_on
+                </span>
                 <span>
                   123 Industrial Park Drive,
                   <br />
@@ -173,7 +228,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p className="text-center sm:text-left">© 2026 SSSK Environmental Services. All Rights Reserved.</p>
+          <p className="text-center sm:text-left">
+            © 2026 SSSK Environmental Services. All Rights Reserved.
+          </p>
           <div className="flex space-x-4">
             <Link href="#" className="hover:text-white">
               Privacy Policy
@@ -185,5 +242,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

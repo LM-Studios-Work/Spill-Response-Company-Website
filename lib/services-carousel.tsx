@@ -60,7 +60,8 @@ const infiniteServices = [...services, ...services, ...services];
 
 export function ServicesCarousel() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isScrolling, setIsScrolling] = useState(false);
+  // We use a ref for the timeout so it persists across renders without triggering re-renders
+  const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
 
   // Set initial scroll position to middle set
   useEffect(() => {
@@ -68,31 +69,48 @@ export function ServicesCarousel() {
       const container = containerRef.current;
       const cardWidth = container.scrollWidth / infiniteServices.length;
       const initialScroll = cardWidth * services.length;
-      container.scrollLeft = initialScroll;
+
+      // Use 'auto' behavior for instant setup
+      container.scrollTo({ left: initialScroll, behavior: "auto" });
     }
   }, []);
 
   const handleScroll = () => {
-    if (!containerRef.current || isScrolling) return;
+    if (!containerRef.current) return;
 
-    const container = containerRef.current;
-    const cardWidth = container.scrollWidth / infiniteServices.length;
-    const scrollLeft = container.scrollLeft;
-    const maxScroll = cardWidth * services.length * 2;
-    const minScroll = cardWidth * services.length;
-
-    // If scrolled past the last set, jump to middle set
-    if (scrollLeft >= maxScroll - 10) {
-      setIsScrolling(true);
-      container.scrollLeft = minScroll;
-      setTimeout(() => setIsScrolling(false), 50);
+    // Clear the existing timeout (this is the debounce magic)
+    if (scrollTimeout.current) {
+      clearTimeout(scrollTimeout.current);
     }
 
-    // If scrolled before the first set, jump to middle set
-    if (scrollLeft <= 10) {
-      setIsScrolling(true);
-      container.scrollLeft = minScroll;
-      setTimeout(() => setIsScrolling(false), 50);
+    // Set a new timeout. We only check for the "loop" when the user
+    // STOPS scrolling (momentum ends).
+    scrollTimeout.current = setTimeout(() => {
+      checkScrollPosition();
+    }, 150); // 150ms pause implies scrolling has finished/snapped
+  };
+
+  const checkScrollPosition = () => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const cardWidth = container.scrollWidth / infiniteServices.length;
+    const scrollLeft = container.scrollLeft;
+
+    // Calculate boundaries based on the total width
+    // We want to reset if we are inside the FIRST set or the LAST set
+    const singleSetWidth = cardWidth * services.length;
+
+    // Boundary 1: If we are in the first set (too far left)
+    if (scrollLeft < singleSetWidth / 2) {
+      const newPos = scrollLeft + singleSetWidth;
+      container.scrollTo({ left: newPos, behavior: "auto" }); // "auto" is crucial for instant/invisible jump
+    }
+
+    // Boundary 2: If we are in the last set (too far right)
+    else if (scrollLeft >= singleSetWidth * 2.5) {
+      const newPos = scrollLeft - singleSetWidth;
+      container.scrollTo({ left: newPos, behavior: "auto" });
     }
   };
 
@@ -100,7 +118,10 @@ export function ServicesCarousel() {
     const container = containerRef.current;
     if (!container) return;
 
-    const scrollAmount = 400;
+    const cardWidth = container.scrollWidth / infiniteServices.length;
+    // Scroll one card width exactly for better UX
+    const scrollAmount = cardWidth;
+
     const newPosition =
       direction === "left"
         ? container.scrollLeft - scrollAmount
@@ -114,9 +135,8 @@ export function ServicesCarousel() {
 
   return (
     <section className="py-12 md:py-16 bg-background relative">
-      {/* Carousel Container */}
       <div className="relative group">
-        {/* Left Arrow - HIDDEN ON MOBILE (hidden md:flex) */}
+        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-primary rounded-full shadow-xl items-center justify-center text-white hover:bg-secondary transition-all hover:scale-110 opacity-0 group-hover:opacity-100"
@@ -126,10 +146,16 @@ export function ServicesCarousel() {
         </button>
 
         {/* Scrollable Container */}
-        {/* Added: snap-x snap-mandatory for mobile physics */}
         <div
           ref={containerRef}
           onScroll={handleScroll}
+          /* Key CSS Change: 
+             1. scroll-smooth is REMOVED from the class list here. 
+                We handle smoothness in the button click handler. 
+                Native touch scrolling is naturally smooth.
+             2. snap-mandatory changed to snap-x for slightly less aggressive behavior,
+                though mandatory is okay with the JS fix above.
+          */
           className="flex gap-4 overflow-x-auto scrollbar-hide px-4 md:px-8 py-4 snap-x snap-mandatory touch-pan-x"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
@@ -137,11 +163,9 @@ export function ServicesCarousel() {
             <Link
               key={`${service.href}-${index}`}
               href={service.href}
-              // Added: snap-center to ensure card locks in middle of screen
               className="snap-center group block flex-shrink-0 w-[85vw] md:w-[45vw] lg:w-[30vw]"
             >
               <div className="relative h-64 md:h-72 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary">
-                {/* Background Image */}
                 <div className="absolute inset-0">
                   <Image
                     src={service.image}
@@ -149,11 +173,9 @@ export function ServicesCarousel() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  {/* Simple dark overlay for text readability */}
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                 </div>
 
-                {/* Content */}
                 <div className="relative h-full flex flex-col justify-between p-6 text-white">
                   <div>
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-primary rounded-lg mb-3 group-hover:scale-110 transition-transform">
@@ -181,7 +203,7 @@ export function ServicesCarousel() {
           ))}
         </div>
 
-        {/* Right Arrow - HIDDEN ON MOBILE (hidden md:flex) */}
+        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-primary rounded-full shadow-xl items-center justify-center text-white hover:bg-secondary transition-all hover:scale-110 opacity-0 group-hover:opacity-100"
