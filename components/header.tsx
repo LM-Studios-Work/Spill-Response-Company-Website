@@ -54,7 +54,7 @@ export function Header() {
         {/* --- LOGO --- */}
         <Link href="/" className="flex items-center shrink-0 relative z-50">
           {/* Responsive container for the logo */}
-          <div className="relative w-32 h-10 lg:w-44 lg:h-12 transition-all duration-300">
+          <div className="relative w-39 h-13 lg:w-44 lg:h-12 transition-all duration-300">
             <Image
               src="/sssklogo.png"
               alt="SSSK Logo"
