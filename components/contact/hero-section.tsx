@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export function ContactHeroSection() {
   return (
@@ -6,7 +6,7 @@ export function ContactHeroSection() {
       <div
         className="absolute inset-0 opacity-20 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/placeholder.svg?height=400&width=1200')",
+          backgroundImage: "url('/hero2.webp?height=400&width=1200')",
         }}
       >
         <Image
@@ -21,10 +21,10 @@ export function ContactHeroSection() {
           GET IN TOUCH
         </h1>
         <p className="text-gray-200 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
-          Whether you need an immediate spill response or a long-term waste management plan, our team is ready to
-          assist.
+          Whether you need an immediate spill response or a long-term waste
+          management plan, our team is ready to assist.
         </p>
       </div>
     </section>
-  )
+  );
 }
