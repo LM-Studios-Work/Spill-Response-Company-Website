@@ -42,7 +42,7 @@ const services = [
     description:
       "Industrial spill kits and containment products for rapid response.",
     icon: "inventory_2",
-    image: "/spillkit.jpeg",
+    image: "/spillkit.webp",
     href: "/products",
   },
   {
