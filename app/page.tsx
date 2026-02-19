@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "SSSK Environmental Services - 24/7 Emergency Spill Response South Africa",
   description:
-    "Professional hazardous spill response, pollution control, waste management & environmental assessments. NEMA compliant, ISO 14001 certified. Call 24/7: 071 788 1312",
+    "Professional hazardous spill response, pollution control, waste management & environmental assessments. NEMA compliance. Call 24/7: 071 788 1312",
   keywords: [
     "emergency spill response",
     "hazmat cleanup South Africa",

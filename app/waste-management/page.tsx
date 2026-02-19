@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Integrated Waste Management & Disposal Solutions | SSSK Environmental Services",
   description:
-    "Environmentally responsible, cost-effective, and operationally efficient waste management services for South African industries. Compliant disposal and recycling solutions.",
+    "Environmentally responsible, cost-effective, and operationally efficient waste management services for South African industries. Compliance disposal and recycling solutions.",
   keywords: [
     "waste management",
     "waste disposal",

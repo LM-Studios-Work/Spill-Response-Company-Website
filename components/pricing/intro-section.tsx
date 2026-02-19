@@ -6,11 +6,12 @@ export function IntroSection() {
           Flexible Retainer Models for Every Risk Profile
         </h2>
         <p className="text-foreground-muted text-base sm:text-lg leading-relaxed">
-          Proactive planning is key to mitigating environmental risk. Our retainer packages offer a cost-effective way
-          to ensure your business is compliant, prepared, and has guaranteed access to expert spill response services
-          when you need them most.
+          Proactive planning is key to mitigating environmental risk. Our
+          retainer packages offer a cost-effective way to ensure your business
+          is compliance, prepared, and has guaranteed access to expert spill
+          response services when you need them most.
         </p>
       </div>
     </section>
-  )
+  );
 }

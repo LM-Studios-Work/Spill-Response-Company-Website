@@ -16,8 +16,8 @@ export function AssessmentHeroSection() {
             <br />& Regulatory Reporting
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 font-light max-w-xl">
-            Navigating the complexities of South African environmental law. We ensure your documentation is accurate,
-            compliant, and audit-ready.
+            Navigating the complexities of South African environmental law. We
+            ensure your documentation is accurate, compliance, and audit-ready.
           </p>
           <a
             href="/contact"
@@ -28,5 +28,5 @@ export function AssessmentHeroSection() {
         </div>
       </div>
     </header>
-  )
+  );
 }

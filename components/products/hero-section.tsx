@@ -10,7 +10,7 @@ export function ProductsHeroSection() {
           </h1>
           <p className="text-lg text-gray-200 mb-8 max-w-lg">
             Field-proven solutions for rapid spill response. Economical,
-            fast-acting, and compliant with environmental regulations.
+            fast-acting, and compliance with environmental regulations.
           </p>
           <button className="bg-accent hover:bg-yellow-400 text-black font-bold py-3 px-8 rounded shadow-lg transform transition hover:-translate-y-1 hover:shadow-xl flex items-center">
             Request a Quote

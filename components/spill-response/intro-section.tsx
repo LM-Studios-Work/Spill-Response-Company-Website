@@ -6,13 +6,15 @@ export function IntroSection() {
           Rapid Containment & Site Restoration
         </h2>
         <p className="text-foreground-muted text-lg leading-relaxed">
-          We provide professional, compliant, and rapid spill response services to transporters of hazardous materials
-          operating on South African national and provincial roads. Our teams are ready 24/7 to manage unexpected,
-          sudden, or uncontrolled releases of hazardous substances. Our primary goal is to minimize environmental impact
-          and protect our clients from the criminal prosecution, financial penalties, and cost recovery risks associated
-          with non-compliance.
+          We provide professional, compliance, and rapid spill response services
+          to transporters of hazardous materials operating on South African
+          national and provincial roads. Our teams are ready 24/7 to manage
+          unexpected, sudden, or uncontrolled releases of hazardous substances.
+          Our primary goal is to minimize environmental impact and protect our
+          clients from the criminal prosecution, financial penalties, and cost
+          recovery risks associated with non-compliance.
         </p>
       </div>
     </section>
-  )
+  );
 }

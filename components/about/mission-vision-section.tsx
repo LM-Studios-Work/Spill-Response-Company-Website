@@ -2,19 +2,22 @@ const missionItems = [
   {
     icon: "spa",
     title: "Protect ecosystems",
-    description: "Protect ecosystems from hazardous spills and environmental threats through rapid containment.",
+    description:
+      "Protect ecosystems from hazardous spills and environmental threats through rapid containment.",
   },
   {
     icon: "home_work",
     title: "Safeguard communities",
-    description: "Safeguard communities by protecting living environments and ensuring safety protocols.",
+    description:
+      "Safeguard communities by protecting living environments and ensuring safety protocols.",
   },
   {
     icon: "handshake",
     title: "Support clients",
-    description: "Support clients with compliant, efficient services that minimize operational downtime.",
+    description:
+      "Support clients with compliance, efficient services that minimize operational downtime.",
   },
-]
+];
 
 const visionItems = [
   {
@@ -26,14 +29,16 @@ const visionItems = [
   {
     icon: "forest",
     title: "Environmental restoration",
-    description: "Environmental restoration and consistent care for our planet's delicate resilience.",
+    description:
+      "Environmental restoration and consistent care for our planet's delicate resilience.",
   },
   {
     icon: "trending_up",
     title: "Long-term resilience",
-    description: "Long-term resilience and sustainable solutions to long-term environmental development.",
+    description:
+      "Long-term resilience and sustainable solutions to long-term environmental development.",
   },
-]
+];
 
 export function MissionVisionSection() {
   return (
@@ -48,11 +53,17 @@ export function MissionVisionSection() {
               {missionItems.map((item) => (
                 <li key={item.title} className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
-                    <span className="material-icons text-3xl sm:text-4xl text-primary">{item.icon}</span>
+                    <span className="material-icons text-3xl sm:text-4xl text-primary">
+                      {item.icon}
+                    </span>
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-foreground-muted text-sm">{item.description}</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-foreground-muted text-sm">
+                      {item.description}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -66,11 +77,17 @@ export function MissionVisionSection() {
               {visionItems.map((item) => (
                 <li key={item.title} className="flex items-start">
                   <div className="flex-shrink-0 mr-4">
-                    <span className="material-icons text-3xl sm:text-4xl text-primary">{item.icon}</span>
+                    <span className="material-icons text-3xl sm:text-4xl text-primary">
+                      {item.icon}
+                    </span>
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-foreground-muted text-sm">{item.description}</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-foreground-muted text-sm">
+                      {item.description}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -79,5 +96,5 @@ export function MissionVisionSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

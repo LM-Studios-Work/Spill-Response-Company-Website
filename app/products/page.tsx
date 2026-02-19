@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Industrial Spill Kits & Containment Products | SSSK Environmental Services",
   description:
-    "Field-proven spill control solutions including mobile spill kits, absorbents, and bio-remediation agents. Fast-acting, economical, and compliant with environmental regulations.",
+    "Field-proven spill control solutions including mobile spill kits, absorbents, and bio-remediation agents. Fast-acting, economical, and compliance with environmental regulations.",
   keywords: [
     "spill kits",
     "absorbent products",

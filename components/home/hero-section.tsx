@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-0 min-h-[calc(100svh-80px)] relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div className="space-y-4 lg:space-y-5">
           <div className="inline-block px-3 py-1 bg-accent text-black font-bold text-xs uppercase tracking-widest rounded mb-2">
-            NEMA Compliant & ISO Certified
+            NEMA compliance
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             SPILL RESPONSE <br />
@@ -28,8 +28,8 @@ export function HeroSection() {
               Emergency Call-Out Service
             </h2>
             <p className="text-gray-200 mt-2 text-sm md:text-base">
-              Immediate assistance for hazardous spills. Fully equipped teams ready to deploy 24/7/365 across the
-              region.
+              Immediate assistance for hazardous spills. Fully equipped teams
+              ready to deploy 24/7/365 across the region.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -37,7 +37,8 @@ export function HeroSection() {
               href="tel:0717881312"
               className="flex items-center justify-center bg-accent hover:bg-yellow-400 text-black font-display font-bold text-xl px-8 py-4 rounded shadow-lg transform hover:-translate-y-1 transition border-2 border-accent"
             >
-              <span className="material-icons mr-2">phone_in_talk</span> REPORT A SPILL NOW
+              <span className="material-icons mr-2">phone_in_talk</span> REPORT
+              A SPILL NOW
             </a>
             <a
               href="#products"
@@ -66,5 +67,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

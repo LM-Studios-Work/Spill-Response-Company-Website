@@ -15,7 +15,8 @@ const protocolSteps = [
     number: 3,
     icon: "local_shipping",
     title: "Cleanup & Disposal:",
-    description: "Removal of contaminants and environmentally compliant disposal at approved facilities.",
+    description:
+      "Removal of contaminants and environmentally compliance disposal at approved facilities.",
   },
   {
     number: 4,
@@ -27,9 +28,10 @@ const protocolSteps = [
     number: 5,
     icon: "description",
     title: "Regulatory Reporting:",
-    description: "Formal reporting to relevant authorities including the Director-General and SAPS as required by law.",
+    description:
+      "Formal reporting to relevant authorities including the Director-General and SAPS as required by law.",
   },
-]
+];
 
 export function ResponseProtocol() {
   return (
@@ -47,10 +49,16 @@ export function ResponseProtocol() {
                     {step.number}
                   </span>
                   <div className="flex gap-4 mt-2">
-                    <span className="material-icons text-secondary text-3xl">{step.icon}</span>
+                    <span className="material-icons text-secondary text-3xl">
+                      {step.icon}
+                    </span>
                     <div>
-                      <h4 className="font-bold text-foreground uppercase text-sm">{step.title}</h4>
-                      <p className="text-sm text-foreground-muted">{step.description}</p>
+                      <h4 className="font-bold text-foreground uppercase text-sm">
+                        {step.title}
+                      </h4>
+                      <p className="text-sm text-foreground-muted">
+                        {step.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -59,15 +67,18 @@ export function ResponseProtocol() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8">Flexible Service Options</h3>
+            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8">
+              Flexible Service Options
+            </h3>
             <div className="grid gap-6">
               <div className="p-6 border border-gray-200 rounded-lg bg-gray-50">
                 <h4 className="font-bold text-lg text-secondary uppercase mb-2">
                   Option A: Emergency Call-Out (Pay-as-used)
                 </h4>
                 <p className="text-sm text-foreground-muted">
-                  Ideal for operators requiring ad-hoc spill response. Charges are based on mobilization, personnel,
-                  equipment, materials used, and duration of response.
+                  Ideal for operators requiring ad-hoc spill response. Charges
+                  are based on mobilization, personnel, equipment, materials
+                  used, and duration of response.
                 </p>
               </div>
 
@@ -83,15 +94,22 @@ export function ResponseProtocol() {
                 </p>
                 <ul className="text-sm text-foreground-muted space-y-1 list-disc pl-5">
                   <li>
-                    <strong className="text-foreground">Guaranteed Priority Response:</strong> You are included in our
-                    emergency response plan.
+                    <strong className="text-foreground">
+                      Guaranteed Priority Response:
+                    </strong>{" "}
+                    You are included in our emergency response plan.
                   </li>
                   <li>
-                    <strong className="text-foreground">Pre-Agreed Rates:</strong> Predictable commercial terms.
+                    <strong className="text-foreground">
+                      Pre-Agreed Rates:
+                    </strong>{" "}
+                    Predictable commercial terms.
                   </li>
                   <li>
-                    <strong className="text-foreground">Compliance Support:</strong> Assistance with NEMA Section 30
-                    reporting.
+                    <strong className="text-foreground">
+                      Compliance Support:
+                    </strong>{" "}
+                    Assistance with NEMA Section 30 reporting.
                   </li>
                 </ul>
               </div>
@@ -106,5 +124,5 @@ export function ResponseProtocol() {
         </div>
       </div>
     </section>
-  )
+  );
 }

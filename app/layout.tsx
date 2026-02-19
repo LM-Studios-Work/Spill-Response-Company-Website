@@ -8,9 +8,10 @@ const _inter = Inter({ subsets: ["latin"] });
 const _oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SSSK Environmental Services - 24/7 Emergency Spill Response & Hazmat Remediation",
+  title:
+    "SSSK Environmental Services - 24/7 Emergency Spill Response & Hazmat Remediation",
   description:
-    "Leading environmental protection and hazardous spill remediation services. 24/7 Emergency Response, pollution control, waste management, and environmental assessments across South Africa. NEMA compliant & ISO certified.",
+    "Leading environmental protection and hazardous spill remediation services. 24/7 Emergency Response, pollution control, waste management, and environmental assessments across South Africa. NEMA compliance.",
   generator: "v0.app",
   metadataBase: new URL("https://sssksolutions.co.za"),
   alternates: {
@@ -37,7 +38,8 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     url: "https://sssksolutions.co.za",
     siteName: "SSSK Environmental Services",
-    title: "SSSK Environmental Services - 24/7 Emergency Spill Response & Hazmat Remediation",
+    title:
+      "SSSK Environmental Services - 24/7 Emergency Spill Response & Hazmat Remediation",
     description:
       "Leading environmental protection and hazardous spill remediation services. 24/7 Emergency Response, pollution control, waste management, and environmental assessments across South Africa.",
     images: [
@@ -94,7 +96,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1a3a3a" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/sssklogo.png" />
         <link
@@ -110,44 +115,44 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: 'SSSK Environmental Services',
-              image: 'https://sssksolutions.co.za/sssklogo.png',
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "SSSK Environmental Services",
+              image: "https://sssksolutions.co.za/sssklogo.png",
               description:
-                'Leading environmental protection and hazardous spill remediation services across South Africa',
-              telephone: '+27-71-788-1312',
-              email: 'info@sssksolutions.co.za',
+                "Leading environmental protection and hazardous spill remediation services across South Africa",
+              telephone: "+27-71-788-1312",
+              email: "info@sssksolutions.co.za",
               address: {
-                '@type': 'PostalAddress',
-                streetAddress: '123 Industrial Park Drive',
-                addressLocality: 'Kempton Park',
-                postalCode: '1619',
-                addressCountry: 'ZA',
+                "@type": "PostalAddress",
+                streetAddress: "123 Industrial Park Drive",
+                addressLocality: "Kempton Park",
+                postalCode: "1619",
+                addressCountry: "ZA",
               },
-              url: 'https://sssksolutions.co.za',
+              url: "https://sssksolutions.co.za",
               openingHoursSpecification: {
-                '@type': 'OpeningHoursSpecification',
+                "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
-                  'Monday',
-                  'Tuesday',
-                  'Wednesday',
-                  'Thursday',
-                  'Friday',
-                  'Saturday',
-                  'Sunday',
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
                 ],
-                opens: '00:00',
-                closes: '23:59',
+                opens: "00:00",
+                closes: "23:59",
               },
               sameAs: [
-                'https://www.facebook.com/ssskenvironmental',
-                'https://www.linkedin.com/company/sssk-environmental',
+                "https://www.facebook.com/ssskenvironmental",
+                "https://www.linkedin.com/company/sssk-environmental",
               ],
               aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: '4.9',
-                ratingCount: '150',
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                ratingCount: "150",
               },
             }),
           }}
