@@ -8,19 +8,23 @@ import { ServicesCarousel } from "@/lib/services-carousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Integrated Waste Management & Disposal Solutions | SSSK Environmental Services",
+  title: "Industrial Waste Management Gauteng | Hazardous Waste Disposal",
   description:
-    "Environmentally responsible, cost-effective, and operationally efficient waste management services for South African industries. Compliance disposal and recycling solutions.",
+    "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal.",
   keywords: [
-    "waste management",
-    "waste disposal",
-    "industrial waste",
-    "waste recycling",
-    "hazardous waste",
+    "Industrial waste management",
+    "Hazardous waste disposal",
+    "Integrated waste management solutions",
+    "NEMA compliant waste disposal",
+    "Toxic waste removal services",
+    "Commercial waste recycling",
+    "Hazardous waste disposal Gauteng",
+    "Industrial waste management",
   ],
   openGraph: {
-    title: "Integrated Waste Management & Disposal Solutions",
-    description: "Professional waste management and disposal services",
+    title: "Industrial Waste Management Gauteng | Hazardous Waste Disposal",
+    description:
+      "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal.",
     url: "https://sssksolutions.co.za/waste-management",
     type: "website",
   },

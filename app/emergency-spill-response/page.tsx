@@ -12,23 +12,24 @@ import Image from "next/image";
 import { ServicesCarousel } from "@/lib/services-carousel";
 
 export const metadata: Metadata = {
-  title:
-    "24/7 Emergency Spill Response & Hazmat Recovery | SSSK Environmental Services",
+  title: "Emergency Spill Response Gauteng | 24/7 Hazmat Cleanup Company",
   description:
-    "Rapid 24/7 emergency spill response for road, rail, and industrial incidents across South Africa. NEMA compliance. Call 071 788 1312",
+    "24/7 emergency spill response services in Gauteng. Fast hazmat recovery for road, rail & industrial incidents. Spill cleanup company near me. NEMA compliant.",
   keywords: [
-    "emergency spill response",
-    "hazmat recovery",
-    "spill cleanup",
-    "24/7 emergency",
-    "NEMA compliance",
-    "road spill",
-    "rail spill",
-    "industrial spill",
+    "Emergency spill response",
+    "Hazmat recovery",
+    "Spill cleanup company",
+    "24/7 hazardous material cleanup",
+    "Industrial spill containment",
+    "Road spill response services",
+    "Rail spill cleanup",
+    "Emergency spill response Gauteng",
+    "Hazmat cleanup company near me",
   ],
   openGraph: {
-    title: "24/7 Emergency Spill Response & Hazmat Recovery",
-    description: "Professional hazmat remediation and spill response services",
+    title: "Emergency Spill Response Gauteng | 24/7 Hazmat Cleanup Company",
+    description:
+      "24/7 emergency spill response services in Gauteng. Fast hazmat recovery for road, rail & industrial incidents. Spill cleanup company near me. NEMA compliant.",
     url: "https://sssksolutions.co.za/emergency-spill-response",
     type: "website",
   },

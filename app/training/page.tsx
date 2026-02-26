@@ -10,19 +10,22 @@ import { ServicesCarousel } from "@/lib/services-carousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Spill Kit Training & Environmental Awareness | SSSK Environmental Services",
+  title: "Spill Kit Training Courses South Africa | Hazmat Response",
   description:
-    "Comprehensive spill kit training and environmental awareness programs. Equip your team with practical skills for instant spill containment and regulatory compliance.",
+    "On-site spill kit and hazmat response training courses in South Africa. We also offer environmental awareness training and corporate spill containment courses for industrial safety compliance.",
   keywords: [
-    "spill training",
-    "hazmat training",
-    "compliance training",
-    "environmental training",
-    "safety training",
+    "Spill kit training",
+    "Hazmat response training",
+    "Environmental awareness training",
+    "Corporate spill containment courses",
+    "Industrial safety compliance training",
+    "Spill kit training courses South Africa",
+    "On-site hazmat training",
   ],
   openGraph: {
-    title: "Spill Kit Training & Environmental Awareness",
-    description: "Professional spill response and environmental awareness training",
+    title: "Spill Kit Training Courses South Africa | Hazmat Response",
+    description:
+      "On-site spill kit and hazmat response training courses in South Africa. We also offer environmental awareness training and corporate spill containment courses for industrial safety compliance.",
     url: "https://sssksolutions.co.za/training",
     type: "website",
   },

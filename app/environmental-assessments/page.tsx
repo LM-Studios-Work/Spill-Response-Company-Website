@@ -8,19 +8,23 @@ import { ServicesCarousel } from "@/lib/services-carousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Environmental Assessments & Regulatory Reporting | SSSK Environmental Services",
+  title: "Environmental Impact Assessments (EIA) South Africa | EAP",
   description:
-    "Expert environmental impact assessments (EIA) and NEMA compliance reporting. Navigate South African environmental law with confidence. Audit-ready documentation.",
+    "Environmental impact assessments (EIA) in South Africa. As environmental assessment practitioners (EAP), we offer environmental compliance consulting, NEMA compliance reporting, and BAR services.",
   keywords: [
-    "environmental assessments",
-    "EIA",
-    "NEMA compliance",
-    "environmental reporting",
-    "regulatory compliance",
+    "Environmental impact assessments (EIA)",
+    "Environmental compliance consulting",
+    "NEMA compliance reporting",
+    "Regulatory environmental audits",
+    "Environmental assessment practitioner (EAP)",
+    "Basic Assessment Report (BAR) services",
+    "EIA consultants South Africa",
+    "Environmental assessment agencies Gauteng",
   ],
   openGraph: {
-    title: "Environmental Assessments & Regulatory Reporting",
-    description: "Professional environmental impact assessments and compliance reporting",
+    title: "Environmental Impact Assessments (EIA) South Africa | EAP",
+    description:
+      "Environmental impact assessments (EIA) in South Africa. As environmental assessment practitioners (EAP), we offer environmental compliance consulting, NEMA compliance reporting, and BAR services.",
     url: "https://sssksolutions.co.za/environmental-assessments",
     type: "website",
   },

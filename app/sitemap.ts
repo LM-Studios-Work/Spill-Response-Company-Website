@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://sssksolutions.co.za/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: 'https://sssksolutions.co.za/emergency-spill-response',
@@ -51,16 +51,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://sssksolutions.co.za/pricing',
+      url: 'https://sssksolutions.co.za/contact',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://sssksolutions.co.za/contact',
+      url: 'https://sssksolutions.co.za/services',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
   ]
 }
