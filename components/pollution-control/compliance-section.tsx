@@ -87,6 +87,7 @@ export function ComplianceSection() {
                 </div>
               </li>
             </ul>
+          </div>
         </div>
       </div>
     </section>
