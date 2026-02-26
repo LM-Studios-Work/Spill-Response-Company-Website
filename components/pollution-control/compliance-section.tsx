@@ -8,7 +8,9 @@ export function ComplianceSection() {
               Environmental Compliance & Impact Assessments
             </h2>
             <p className="text-foreground-muted mb-8 italic">
-              Our site remediation contractors navigate complex legal requirements to ensure your project complies with all environmental statutes.
+              Our site remediation contractors navigate complex legal
+              requirements to ensure your project complies with all
+              environmental statutes.
             </p>
             <div className="space-y-8">
               <div>
@@ -19,7 +21,9 @@ export function ComplianceSection() {
                   Environmental Impact Assessments (EIA)
                 </h4>
                 <p className="text-foreground-muted pl-6 text-sm">
-                  As a certified environmental assessment practitioner (EAP), we conduct comprehensive EIAs to assess the potential impact of a project on the environment.
+                  As an environmental assessment practitioner (EAP), we conduct
+                  comprehensive EIAs to assess the potential impact of a project
+                  on the environment in compliance with relevant regulations.
                 </p>
               </div>
               <div>
@@ -30,7 +34,9 @@ export function ComplianceSection() {
                   NEMA Compliance Reporting
                 </h4>
                 <p className="text-foreground-muted pl-6 text-sm">
-                  We provide thorough NEMA compliance reporting to ensure your operations adhere to the National Environmental Management Act.
+                  We provide thorough NEMA compliance reporting to ensure your
+                  operations adhere to the National Environmental Management
+                  Act.
                 </p>
               </div>
             </div>
@@ -56,7 +62,8 @@ export function ComplianceSection() {
                   <strong className="text-foreground">Avoid Legal Risk:</strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Proper environmental remediation helps you avoid heavy fines and legal penalties associated with non-compliance.
+                    Proper environmental remediation helps you avoid heavy fines
+                    and legal penalties associated with non-compliance.
                   </span>
                 </div>
               </li>
@@ -70,7 +77,8 @@ export function ComplianceSection() {
                   </strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Proactive pollution control services safeguard your company’s reputation and prevent PR crises.
+                    Proactive pollution control services safeguard your
+                    company’s reputation and prevent PR crises.
                   </span>
                 </div>
               </li>
@@ -79,10 +87,13 @@ export function ComplianceSection() {
                   park
                 </span>
                 <div>
-                  <strong className="text-foreground">Restore Ecosystem Health:</strong>
+                  <strong className="text-foreground">
+                    Restore Ecosystem Health:
+                  </strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Our industrial eco-rehabilitation efforts help restore and preserve natural ecosystems for future generations.
+                    Our industrial eco-rehabilitation efforts help restore and
+                    preserve natural ecosystems for future generations.
                   </span>
                 </div>
               </li>

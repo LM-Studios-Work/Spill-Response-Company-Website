@@ -50,7 +50,10 @@ export function FaqSection() {
               Are you a local spill cleanup company near me?
             </AccordionTrigger>
             <AccordionContent className="text-foreground-muted leading-relaxed">
-              Yes, we are a spill cleanup company based in Gauteng, providing rapid and reliable services to the local community and surrounding areas. If you're searching for a "hazmat cleanup company near me," we are your local experts.
+              Yes, we are a spill cleanup company based in Gauteng, providing
+              rapid and reliable services to the local community and surrounding
+              areas. If you're searching for a "hazmat cleanup company near me,"
+              we are your local experts.
             </AccordionContent>
           </AccordionItem>
 
@@ -112,7 +115,8 @@ export function FaqSection() {
             </AccordionTrigger>
             <AccordionContent className="text-foreground-muted leading-relaxed">
               <p className="mb-2">
-                Our ISO-certified process follows five steps:
+                Our process, developed in compliance with ISO 14001 principles,
+                follows five steps:
               </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>

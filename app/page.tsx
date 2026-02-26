@@ -1,14 +1,14 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { HeroSection } from "@/components/home/hero-section"
-import { ComplianceBanner } from "@/components/home/compliance-banner"
-import { ServicesSection } from "@/components/home/services-section"
-import { ProductsSection } from "@/components/home/products-section"
-import { TestimonialsSection } from "@/components/home/testimonials-section"
-import type { Metadata } from "next"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { HeroSection } from "@/components/home/hero-section";
+import { ServicesSection } from "@/components/home/services-section";
+import { ProductsSection } from "@/components/home/products-section";
+import { TestimonialsSection } from "@/components/home/testimonials-section";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SSSK Environmental Services - 24/7 Emergency Spill Response South Africa",
+  title:
+    "SSSK Environmental Services - 24/7 Emergency Spill Response South Africa",
   description:
     "Professional hazardous spill response, pollution control, waste management & environmental assessments. NEMA compliance. Call 24/7: 071 788 1312",
   keywords: [
@@ -21,11 +21,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "SSSK Environmental Services - 24/7 Emergency Spill Response",
-    description: "Professional hazardous spill response & environmental remediation services",
+    description:
+      "Professional hazardous spill response & environmental remediation services",
     url: "https://sssksolutions.co.za",
     type: "website",
   },
-}
+};
 
 export default function HomePage() {
   return (
@@ -33,12 +34,11 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <ComplianceBanner />
         <ServicesSection />
         <ProductsSection />
         <TestimonialsSection />
       </main>
       <Footer />
     </div>
-  )
+  );
 }

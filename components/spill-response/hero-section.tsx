@@ -1,7 +1,7 @@
 export function SpillHeroSection() {
   return (
     <section
-      className="relative bg-cover bg-center min-h-[600px] flex items-center"
+      className="relative bg-cover bg-center min-h-150 flex items-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
@@ -9,7 +9,7 @@ export function SpillHeroSection() {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-3xl">
           <div className="inline-block bg-accent text-black font-bold uppercase text-xs px-2 py-1 mb-4 rounded-sm tracking-wider">
-            NEMA Certified
+            In compliance with NEMA
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white uppercase leading-tight mb-6 drop-shadow-lg">
             24/7 Emergency
@@ -19,7 +19,9 @@ export function SpillHeroSection() {
             Hazmat Recovery Company
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-2xl drop-shadow-md">
-            Your trusted spill cleanup company in Gauteng. We offer rapid mobilization for Road, Rail, and Industrial incidents, providing 24/7 hazardous material cleanup across South Africa.
+            Your trusted spill cleanup company in Gauteng. We offer rapid
+            mobilization for Road, Rail, and Industrial incidents, providing
+            24/7 hazardous material cleanup across South Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <a
@@ -35,7 +37,7 @@ export function SpillHeroSection() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-t from-background to-transparent"></div>
     </section>
   );
 }
