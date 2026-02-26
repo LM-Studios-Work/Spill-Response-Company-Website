@@ -1,12 +1,18 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Our Services | SSSK Environmental Services",
-  description: "Explore our comprehensive environmental services, including emergency spill response, pollution control, waste management, environmental assessments, and training.",
+  description:
+    "Explore our comprehensive environmental services, including emergency spill response, pollution control, waste management, environmental assessments, and training.",
   keywords: [
     "environmental services",
     "spill response",
@@ -26,7 +32,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Emergency Spill Response",
-    description: "24/7 rapid response to hazardous material spills.",
+    description: "24/7 complianceponse to hazardous material spills.",
     link: "/emergency-spill-response",
   },
   {
