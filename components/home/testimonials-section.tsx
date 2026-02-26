@@ -60,7 +60,7 @@ export function TestimonialsSection() {
 
           <div className="bg-white/10 backdrop-blur-md p-6 rounded-lg border border-white/20">
             <p className="text-gray-200 italic mb-4 text-sm">
-              &quot;Professional, fully equipped, and compliance. They handled
+              &quot;Professional, fully equipped, and thorough. They handled
               the waste disposal paperwork seamlessly. Highly recommended for
               industrial sites.&quot;
             </p>

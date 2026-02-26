@@ -7,7 +7,7 @@ export function ComplianceBanner() {
             <span className="material-icons text-base align-middle mr-1 text-primary">
               verified
             </span>{" "}
-            NEMA compliance
+            NEMA Certified
           </span>
           <span>
             <span className="material-icons text-base align-middle mr-1 text-primary">

@@ -59,7 +59,7 @@ export function WasteSplitSection() {
                   Bio-Hazardous Waste:
                 </strong>
                 <span className="text-gray-300 text-sm">
-                  Disposal compliance with Hazardous Biological Agents
+                  Disposal in accordance with Hazardous Biological Agents
                   Regulations.
                 </span>
               </div>

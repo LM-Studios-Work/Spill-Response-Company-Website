@@ -1,16 +1,16 @@
 export function PollutionHeroSection() {
   return (
-    <header className="relative bg-secondary overflow-hidden">
+    <header className="relative bg-secondary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/pollution.jpg?height=600&width=1200"
+          src="/pollution.jpg?height=500&width=1200"
           alt="Environmental specialist conducting water testing in a river"
           className="w-full h-full object-cover opacity-50 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-transparent"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="lg:w-2/3">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
             Environmental Pollution Control <br className="hidden lg:block" />& Site Remediation Services

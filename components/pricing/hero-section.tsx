@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function PricingHeroSection() {
   return (
-    <section className="relative bg-primary min-h-[350px] sm:min-h-[400px] md:min-h-[500px] flex items-center overflow-hidden">
+    <section className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/placeholder.svg?height=500&width=1200"

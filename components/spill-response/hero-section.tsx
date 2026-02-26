@@ -1,7 +1,7 @@
 export function SpillHeroSection() {
   return (
     <section
-      className="relative bg-cover bg-center min-h-[600px] flex items-center"
+      className="relative bg-cover bg-center h-[500px] flex items-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
@@ -9,7 +9,7 @@ export function SpillHeroSection() {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="max-w-3xl">
           <div className="inline-block bg-accent text-black font-bold uppercase text-xs px-2 py-1 mb-4 rounded-sm tracking-wider">
-            NEMA compliance
+            NEMA Certified
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white uppercase leading-tight mb-6 drop-shadow-lg">
             24/7 Emergency
@@ -30,7 +30,7 @@ export function SpillHeroSection() {
               Emergency Call-Out: 071 788 1312
             </a>
             <span className="text-gray-300 text-sm italic mt-2 sm:mt-0">
-              Fully compliance with Section 30 of NEMA
+              Fully compliant with Section 30 of NEMA
             </span>
           </div>
         </div>

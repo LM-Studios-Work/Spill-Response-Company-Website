@@ -1,6 +1,6 @@
 export function AssessmentHeroSection() {
   return (
-    <header className="relative bg-primary h-[500px] flex items-center">
+    <header className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="/about.webp?height=500&width=1200"
@@ -17,13 +17,13 @@ export function AssessmentHeroSection() {
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 font-light max-w-xl">
             Navigating the complexities of South African environmental law. We
-            ensure your documentation is accurate, compliance, and audit-ready.
+            ensure your documentation is accurate, thorough, and audit-ready.
           </p>
           <a
             href="/contact"
             className="inline-block bg-accent hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:-translate-y-1 text-lg"
           >
-            Get Compliance Support
+            Get Regulatory Support
           </a>
         </div>
       </div>

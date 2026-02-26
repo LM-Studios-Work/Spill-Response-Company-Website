@@ -1,6 +1,6 @@
 export function WasteHeroSection() {
   return (
-    <section className="relative h-[600px] flex items-center">
+    <section className="relative h-[500px] flex items-center">
       <div className="absolute inset-0 z-0">
         <img
           src="/waste.jpg?height=600&width=1200"

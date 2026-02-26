@@ -2,21 +2,16 @@ import Image from "next/image";
 
 export function ContactHeroSection() {
   return (
-    <section className="relative bg-primary border-b border-gray-200">
-      <div
-        className="absolute inset-0 opacity-20 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/hero2.webp?height=400&width=1200')",
-        }}
-      >
+    <section className="relative bg-primary h-[500px] flex items-center overflow-hidden border-b border-gray-200">
+      <div className="absolute inset-0">
         <Image
-          src="/placeholder.svg?height=400&width=1200"
-          alt="Abstract pattern"
+          src="/hero2.webp?height=500&width=1200"
+          alt="Environmental team on site"
           fill
           className="object-cover opacity-20"
         />
       </div>
-      <div className="relative container mx-auto px-4 py-12 sm:py-16 text-center">
+      <div className="relative container mx-auto px-4 text-center w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-black text-white leading-tight tracking-tight mb-4">
           GET IN TOUCH
         </h1>

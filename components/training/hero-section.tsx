@@ -1,6 +1,6 @@
 export function TrainingHeroSection() {
   return (
-    <header className="relative bg-primary h-[600px] flex items-center overflow-hidden">
+    <header className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           src="/training.webp?height=600&width=1200"
@@ -16,7 +16,7 @@ export function TrainingHeroSection() {
             Environmental Awareness
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-lg leading-relaxed drop-shadow-sm">
-            Equip your team with the practical skills to contain spills instantly. Effective training for compliance and
+            Equip your team with the practical skills to contain spills instantly. Effective training for regulatory adherence and
             safety.
           </p>
           <a

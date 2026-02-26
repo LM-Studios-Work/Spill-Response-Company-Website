@@ -14,7 +14,7 @@ export function WasteIntroSection() {
               We provide comprehensive and operationally efficient integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal services. We understand that every industry has unique requirements, which is why our approach is never one-size-fits-all.
             </p>
             <p>
-              We implement straightforward systems for your staff to separate sources for commercial waste recycling, composting, general, and hazardous waste. Watch your own compliance scores improve as we handle the logistics of disposal and reporting.
+              We implement straightforward systems for your staff to separate sources for commercial waste recycling, composting, general, and hazardous waste. Watch your audit scores improve as we handle the logistics of disposal and reporting.
             </p>
           </div>
         </div>

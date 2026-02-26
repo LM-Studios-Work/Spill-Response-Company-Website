@@ -16,7 +16,7 @@ const protocolSteps = [
     icon: "local_shipping",
     title: "Cleanup & Disposal:",
     description:
-      "Removal of contaminants and environmentally compliance disposal at approved facilities.",
+      "Removal of contaminants and environmentally responsible disposal at approved facilities.",
   },
   {
     number: 4,

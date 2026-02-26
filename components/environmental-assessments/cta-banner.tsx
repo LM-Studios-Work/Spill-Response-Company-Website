@@ -11,7 +11,7 @@ export function AssessmentCtaBanner() {
           Don&apos;t let paperwork be your downfall.
         </h2>
         <p className="text-green-100 text-lg mb-8">
-          Ensure your environmental reporting is accurate and compliance.
+          Ensure your environmental reporting is accurate and audit-ready.
         </p>
         <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-8 py-4">
           <span className="text-green-100 font-medium mr-2">
