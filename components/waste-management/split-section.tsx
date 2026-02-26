@@ -75,10 +75,10 @@ export function WasteSplitSection() {
             Documentation & Compliance
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-            NEMA Compliant Waste Disposal
+            NEMA Compliance Waste Disposal
           </h2>
           <p className="text-foreground-muted mb-8">
-            We provide meticulous paperwork handling to ensure you are always audit-ready for NEMA compliant waste disposal.
+            We provide meticulous paperwork handling to ensure you are always audit-ready for waste disposal in full compliance with NEMA.
           </p>
           <ul className="space-y-3 mb-10 text-foreground font-medium">
             <li className="flex items-center">

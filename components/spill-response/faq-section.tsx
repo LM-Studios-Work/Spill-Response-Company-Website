@@ -142,10 +142,10 @@ export function FaqSection() {
           {/* Compliance */}
           <AccordionItem value="item-7">
             <AccordionTrigger className="text-left font-bold text-foreground">
-              Is SSSK Environmental Services NEMA compliant?
+              Does SSSK Environmental Services operate in NEMA compliance?
             </AccordionTrigger>
             <AccordionContent className="text-foreground-muted leading-relaxed">
-              Yes. We are fully compliant with Section 30 of the National
+              Yes. We operate in full compliance with Section 30 of the National
               Environmental Management Act (NEMA). We assist clients with the
               necessary legal reporting to relevant authorities to protect you
               from criminal prosecution and financial penalties.

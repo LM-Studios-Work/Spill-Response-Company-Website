@@ -30,7 +30,7 @@ export function SpillHeroSection() {
               Emergency Call-Out: 071 788 1312
             </a>
             <span className="text-gray-300 text-sm italic mt-2 sm:mt-0">
-              Fully compliant with Section 30 of NEMA
+              Operating in compliance with Section 30 of NEMA
             </span>
           </div>
         </div>

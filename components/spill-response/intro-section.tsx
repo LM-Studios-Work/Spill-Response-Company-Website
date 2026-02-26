@@ -6,7 +6,7 @@ export function IntroSection() {
           Your Trusted Spill Cleanup Company for Rapid Containment
         </h2>
         <p className="text-foreground-muted text-lg leading-relaxed">
-          As a leading spill cleanup company in Gauteng, we provide professional, compliant, and rapid emergency spill response services to transporters of hazardous materials. Our 24/7 teams are equipped for hazmat recovery and industrial spill containment, managing unexpected releases of hazardous substances to minimize environmental impact. We protect our clients from prosecution and financial penalties associated with non-compliance.
+          As a leading spill cleanup company in Gauteng, we provide professional, regulation-focused, and rapid emergency spill response services to transporters of hazardous materials. Our 24/7 teams are equipped for hazmat recovery and industrial spill containment, managing unexpected releases of hazardous substances to minimize environmental impact. We protect our clients from prosecution and financial penalties associated with non-compliance.
         </p>
       </div>
     </section>
