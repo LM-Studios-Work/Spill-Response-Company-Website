@@ -10,12 +10,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Industrial Waste Management Gauteng | Hazardous Waste Disposal",
   description:
-    "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal.",
+    "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including waste disposal in compliance with NEMA and toxic waste removal.",
   keywords: [
     "Industrial waste management",
     "Hazardous waste disposal",
     "Integrated waste management solutions",
-    "NEMA compliant waste disposal",
+    "NEMA compliance waste disposal",
     "Toxic waste removal services",
     "Commercial waste recycling",
     "Hazardous waste disposal Gauteng",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Industrial Waste Management Gauteng | Hazardous Waste Disposal",
     description:
-      "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal.",
+      "Specialists in industrial waste management and hazardous waste disposal in Gauteng. We provide integrated waste management solutions, including waste disposal in compliance with NEMA and toxic waste removal.",
     url: "https://sssksolutions.co.za/waste-management",
     type: "website",
   },

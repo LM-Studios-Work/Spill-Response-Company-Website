@@ -56,46 +56,53 @@ const hazmatCapabilities = [
 
 export function ServicesGrid() {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_1px_2fr] gap-0 lg:gap-12">
+
+          {/* Left column */}
           <div>
-            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8 border-b-4 border-secondary pb-2 inline-block">
+            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-2 pb-2 border-b-4 border-secondary inline-block">
               Road Spill Response Services & Industrial Spill Containment
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 mt-8">
               {roadTankerServices.map((service) => (
                 <div key={service.title} className="flex gap-4">
-                  <div className="text-secondary shrink-0 pt-1">
+                  <div className="text-secondary shrink-0 pt-0.5">
                     <i className={`${service.icon} text-3xl`}></i>
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground uppercase text-sm mb-1">{service.title}</h4>
-                    <p className="text-sm text-foreground-muted leading-snug">{service.description}</p>
+                    <p className="text-sm text-foreground-muted leading-relaxed">{service.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
+          {/* Vertical divider */}
+          <div className="hidden lg:block bg-border w-px self-stretch" />
+
+          {/* Right column */}
           <div>
-            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8 border-b-4 border-secondary pb-2 inline-block">
+            <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-2 pb-2 border-b-4 border-secondary inline-block">
               Hazmat Recovery Capabilities
             </h3>
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 gap-y-8 mt-8">
               {hazmatCapabilities.map((capability) => (
-                <div key={capability.title} className="flex gap-4 items-start">
-                  <div className="bg-gray-100 p-3 rounded text-secondary shrink-0">
-                    <i className={`${capability.icon} text-2xl`}></i>
+                <div key={capability.title} className="flex gap-4">
+                  <div className="text-secondary shrink-0 pt-0.5">
+                    <i className={`${capability.icon} text-3xl`}></i>
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground uppercase text-sm mb-1">{capability.title}</h4>
-                    <p className="text-sm text-foreground-muted">{capability.description}</p>
+                    <p className="text-sm text-foreground-muted leading-relaxed">{capability.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>

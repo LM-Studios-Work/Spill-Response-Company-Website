@@ -32,7 +32,7 @@ const services = [
   {
     title: "Environmental Assessments",
     description:
-      "NEMA compliance reporting and environmental impact assessments.",
+      "NEMA reporting and environmental impact assessments.",
     icon: "assignment",
     image: "/environment.webp?height=300&width=400",
     href: "/environmental-assessments",

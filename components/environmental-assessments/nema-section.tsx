@@ -33,8 +33,8 @@ export function NemaSection() {
                   error
                 </span>
                 <span>
-                  <strong>Directives</strong> to cease operations until
-                  compliance.
+                  <strong>                  Directives</strong> to cease operations until
+                  remediated.
                 </span>
               </li>
               <li className="flex items-start gap-2">
