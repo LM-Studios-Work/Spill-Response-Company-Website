@@ -8,7 +8,7 @@ export function WasteSplitSection() {
             Hazardous Waste Specialists
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-accent mb-8">
-            Hazardous Waste Collection & Disposal
+            Hazardous Waste Disposal in Gauteng
           </h2>
           <ul className="space-y-6">
             <li className="flex items-start">
@@ -30,10 +30,10 @@ export function WasteSplitSection() {
               </span>
               <div>
                 <strong className="text-white block mb-1">
-                  Chemical Waste:
+                  Toxic Waste Removal Services:
                 </strong>
                 <span className="text-gray-300 text-sm">
-                  Acid spills, solvents, and other industrial chemicals.
+                  Safe removal of acid spills, solvents, and other industrial chemicals.
                 </span>
               </div>
             </li>
@@ -75,12 +75,10 @@ export function WasteSplitSection() {
             Documentation & Compliance
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-            Audit-Ready Documentation
+            NEMA Compliant Waste Disposal
           </h2>
           <p className="text-foreground-muted mb-8">
-            Peace of mind through meticulous paperwork handling to eliminate the
-            procedural cost to management today. We ensure you are always
-            audit-ready.
+            We provide meticulous paperwork handling to ensure you are always audit-ready for NEMA compliant waste disposal.
           </p>
           <ul className="space-y-3 mb-10 text-foreground font-medium">
             <li className="flex items-center">

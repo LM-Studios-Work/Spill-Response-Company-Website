@@ -16,11 +16,10 @@ export function SpillHeroSection() {
             <br />
             Spill Response &
             <br />
-            Hazmat Recovery
+            Hazmat Recovery Company
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-2xl drop-shadow-md">
-            Rapid mobilization for Road, Rail, and Industrial incidents across
-            South Africa.
+            Your trusted spill cleanup company in Gauteng. We offer rapid mobilization for Road, Rail, and Industrial incidents, providing 24/7 hazardous material cleanup across South Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <a

@@ -1,27 +1,27 @@
 const coreServices = [
   {
     icon: "spa",
-    title: "Bio-Remediation of Soil",
+    title: "Soil Remediation Services",
     description:
-      "Biological agents and special processes to remove toxins, using soil binders, reagents, and other natural restoration methods.",
+      "We provide expert soil remediation services using biological agents to remove toxins and restore contaminated land.",
   },
   {
     icon: "water_drop",
-    title: "Watercourse & Storm Water Decontamination",
+    title: "Watercourse Pollution Restoration",
     description:
-      "Specialized remediation protection and reduction measures for native environmental water bodies and systems.",
+      "Our team is equipped for watercourse pollution restoration, implementing protection and decontamination measures for aquatic ecosystems.",
   },
   {
     icon: "assignment_turned_in",
-    title: "Environmental Management Plans (EMPs)",
+    title: "Industrial Eco-Rehabilitation",
     description:
-      "Proactive planning and assessments to support services, leading education and compliance formalities.",
+      "We develop and implement industrial eco-rehabilitation plans to restore impacted environments and ensure long-term sustainability.",
   },
   {
     icon: "recycling",
-    title: "Waste Reduction & Recycling",
+    title: "Contaminated Land Cleanup",
     description:
-      "Circular economy is the process and recreation to return waste into usable resources and minimize impact.",
+      "Our contaminated land cleanup services address historical and recent pollution, returning sites to a safe and usable state.",
   },
 ]
 

@@ -40,12 +40,21 @@ export function FaqSection() {
             <AccordionContent className="text-foreground-muted leading-relaxed">
               Yes. Our teams are available 24 hours a day, 7 days a week, for
               rapid mobilization to road, rail, and industrial incidents across
-              South African national and provincial roads.
+              South Africa, with a primary focus on Gauteng.
             </AccordionContent>
           </AccordionItem>
 
           {/* Capabilities */}
           <AccordionItem value="item-3">
+            <AccordionTrigger className="text-left font-bold text-foreground">
+              Are you a local spill cleanup company near me?
+            </AccordionTrigger>
+            <AccordionContent className="text-foreground-muted leading-relaxed">
+              Yes, we are a spill cleanup company based in Gauteng, providing rapid and reliable services to the local community and surrounding areas. If you're searching for a "hazmat cleanup company near me," we are your local experts.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4">
             <AccordionTrigger className="text-left font-bold text-foreground">
               What types of hazardous materials can you clean up?
             </AccordionTrigger>

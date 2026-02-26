@@ -5,11 +5,10 @@ export function ComplianceSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <div>
             <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-              Compliance & Impact Assessments
+              Environmental Compliance & Impact Assessments
             </h2>
             <p className="text-foreground-muted mb-8 italic">
-              Navigating the law to complying by specialist requirements and
-              statutes.
+              Our site remediation contractors navigate complex legal requirements to ensure your project complies with all environmental statutes.
             </p>
             <div className="space-y-8">
               <div>
@@ -20,8 +19,7 @@ export function ComplianceSection() {
                   Environmental Impact Assessments (EIA)
                 </h4>
                 <p className="text-foreground-muted pl-6 text-sm">
-                  Comprehensive impact assessments assumed in remediation and
-                  natural impact assessments.
+                  As a certified environmental assessment practitioner (EAP), we conduct comprehensive EIAs to assess the potential impact of a project on the environment.
                 </p>
               </div>
               <div>
@@ -29,12 +27,10 @@ export function ComplianceSection() {
                   <span className="material-icons mr-2 text-accent mt-1 text-sm">
                     circle
                   </span>
-                  NEMA Section 30(5) Compliance
+                  NEMA Compliance Reporting
                 </h4>
                 <p className="text-foreground-muted pl-6 text-sm">
-                  compliance: Norm of non-compliance on NEMA Section 30(5)
-                  compliance vital-acts, retaining the nature verification of
-                  external empires.
+                  We provide thorough NEMA compliance reporting to ensure your operations adhere to the National Environmental Management Act.
                 </p>
               </div>
             </div>
@@ -42,7 +38,7 @@ export function ComplianceSection() {
 
           <div className="bg-gray-50 p-8 rounded-lg shadow-sm border-l-4 border-accent">
             <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-              Why Remediation Matters
+              Why Environmental Remediation Matters
             </h2>
             <blockquote className="text-foreground-muted italic mb-8 border-l-2 border-gray-300 pl-4">
               &quot;The greatest threat to our planet is the belief that someone
@@ -57,11 +53,10 @@ export function ComplianceSection() {
                   gavel
                 </span>
                 <div>
-                  <strong className="text-foreground">Legal Risk:</strong>
+                  <strong className="text-foreground">Avoid Legal Risk:</strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Avoid heavy fines, legal processes, and assessment
-                    penalties.
+                    Proper environmental remediation helps you avoid heavy fines and legal penalties associated with non-compliance.
                   </span>
                 </div>
               </li>
@@ -71,12 +66,11 @@ export function ComplianceSection() {
                 </span>
                 <div>
                   <strong className="text-foreground">
-                    Reputational Damage:
+                    Protect Your Reputation:
                   </strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Identify analytical reputational damage, economic isolation
-                    and potential PR crises.
+                    Proactive pollution control services safeguard your company’s reputation and prevent PR crises.
                   </span>
                 </div>
               </li>
@@ -85,16 +79,14 @@ export function ComplianceSection() {
                   park
                 </span>
                 <div>
-                  <strong className="text-foreground">Ecosystem Health:</strong>
+                  <strong className="text-foreground">Restore Ecosystem Health:</strong>
                   <span className="text-foreground-muted text-sm">
                     {" "}
-                    Develop rehabilitation and health ecosystems pressures
-                    ecosystems.
+                    Our industrial eco-rehabilitation efforts help restore and preserve natural ecosystems for future generations.
                   </span>
                 </div>
               </li>
             </ul>
-          </div>
         </div>
       </div>
     </section>

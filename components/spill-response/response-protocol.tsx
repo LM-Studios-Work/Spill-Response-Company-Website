@@ -40,7 +40,7 @@ export function ResponseProtocol() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8">
-              The SSSK Response Protocol
+              Our Emergency Spill Response Protocol
             </h3>
             <div className="space-y-6">
               {protocolSteps.map((step) => (
@@ -76,7 +76,7 @@ export function ResponseProtocol() {
                   Option A: Emergency Call-Out (Pay-as-used)
                 </h4>
                 <p className="text-sm text-foreground-muted">
-                  Ideal for operators requiring ad-hoc spill response. Charges
+                  Ideal for operators in Gauteng requiring ad-hoc spill response. Charges
                   are based on mobilization, personnel, equipment, materials
                   used, and duration of response.
                 </p>

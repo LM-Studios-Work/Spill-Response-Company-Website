@@ -2,7 +2,7 @@ const roadTankerServices = [
   {
     icon: "fa-solid fa-truck-moving",
     title: "Road Tanker Incidents:",
-    description: "Comprehensive cleanup for tanker collisions and rollovers on major routes.",
+    description: "As a leading spill cleanup company, we offer comprehensive cleanup for tanker collisions and rollovers on major routes.",
   },
   {
     icon: "fa-solid fa-industry",
@@ -61,7 +61,7 @@ export function ServicesGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8 border-b-4 border-secondary pb-2 inline-block">
-              Specialized Road Tanker & Industrial Response
+              Road Spill Response Services & Industrial Spill Containment
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {roadTankerServices.map((service) => (
@@ -80,7 +80,7 @@ export function ServicesGrid() {
 
           <div>
             <h3 className="text-2xl font-display font-bold text-secondary uppercase mb-8 border-b-4 border-secondary pb-2 inline-block">
-              Hazardous Material Capabilities
+              Hazmat Recovery Capabilities
             </h3>
             <div className="space-y-6">
               {hazmatCapabilities.map((capability) => (

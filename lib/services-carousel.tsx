@@ -8,7 +8,7 @@ const services = [
   {
     title: "Emergency Spill Response",
     description:
-      "24/7 rapid mobilization for hazardous spills across road, rail, and industrial sites.",
+      "24/7 rapid mobilization for hazardous spills in Gauteng across road, rail, and industrial sites.",
     icon: "emergency",
     image: "/hero1.webp",
     href: "/emergency-spill-response",

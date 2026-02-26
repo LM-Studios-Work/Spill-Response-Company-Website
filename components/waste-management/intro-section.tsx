@@ -7,20 +7,14 @@ export function WasteIntroSection() {
             Seamless Business Support
           </span>
           <h2 className="text-4xl font-display font-bold text-foreground mb-8">
-            Tailor-Made Waste Solutions
+            Integrated Waste Management Solutions
           </h2>
           <div className="prose prose-lg text-foreground-muted max-w-none">
             <p className="mb-6">
-              Comprehensive, operationally efficient, compliance waste disposal
-              to ensure comfort and management of waste services. We understand
-              that every industry has unique requirements, which is why our
-              approach is never one-size-fits-all.
+              We provide comprehensive and operationally efficient integrated waste management solutions, including NEMA compliant waste disposal and toxic waste removal services. We understand that every industry has unique requirements, which is why our approach is never one-size-fits-all.
             </p>
             <p>
-              Implement straightforward systems for your staff to separate
-              sources for recycling, composting, general, and hazardous waste.
-              Watch your own compliance scores improve as we handle the
-              logistics of disposal and reporting.
+              We implement straightforward systems for your staff to separate sources for commercial waste recycling, composting, general, and hazardous waste. Watch your own compliance scores improve as we handle the logistics of disposal and reporting.
             </p>
           </div>
         </div>

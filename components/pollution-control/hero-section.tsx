@@ -13,10 +13,10 @@ export function PollutionHeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="lg:w-2/3">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
-            ENVIRONMENTAL POLLUTION CONTROL <br className="hidden lg:block" />& SITE REMEDIATION
+            Environmental Pollution Control <br className="hidden lg:block" />& Site Remediation Services
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
-            Science-based restoration for contaminated land, watercourses, and industrial sites.
+            As one of the leading environmental remediation companies in South Africa, we offer science-based solutions for contaminated land cleanup, soil remediation services, and watercourse pollution restoration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

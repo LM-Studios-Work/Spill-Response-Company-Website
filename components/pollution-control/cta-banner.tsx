@@ -7,10 +7,10 @@ export function PollutionCtaBanner() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex-1">
             <h3 className="font-display text-2xl font-bold mb-2">
-              Need a site assessment or remediation plan?
+              Need Site Remediation Services in South Africa?
             </h3>
             <p className="text-gray-300 mb-6">
-              Partner with SSSK for science-based environmental solutions.
+              As one of the leading environmental remediation companies in South Africa, we provide science-based solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 text-lg font-semibold">
               <a
