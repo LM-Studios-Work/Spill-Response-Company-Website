@@ -1,14 +1,17 @@
+import Image from "next/image";
+
 export function AbsorbentsSection() {
   return (
     <section className="py-16 lg:py-24 bg-green-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="rounded-xl overflow-hidden shadow-xl border-4 border-white w-full max-w-md">
-              <img
+            <div className="rounded-xl overflow-hidden shadow-xl border-4 border-white w-full max-w-md relative h-64 lg:h-80">
+              <Image
                 src="/placeholder.svg?height=320&width=400"
                 alt="Pouring absorbent granules onto a spill"
-                className="w-full h-64 lg:h-80 object-cover hover:scale-110 transition duration-700"
+                fill
+                className="object-cover hover:scale-110 transition duration-700"
               />
             </div>
           </div>

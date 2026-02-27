@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function SpillKitsSection() {
   return (
     <section className="py-16 lg:py-24 bg-card">
@@ -42,11 +44,12 @@ export function SpillKitsSection() {
             </ul>
           </div>
           <div className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center">
-            <div className="bg-gray-100 rounded-2xl p-8 w-full max-w-md shadow-inner">
-              <img
+            <div className="bg-gray-100 rounded-2xl p-8 w-full max-w-md shadow-inner relative aspect-square">
+              <Image
                 src="/placeholder.svg?height=400&width=400"
                 alt="Complete Spill Kit Contents Display"
-                className="w-full h-auto object-contain drop-shadow-lg transform transition hover:scale-105 duration-300"
+                fill
+                className="object-contain drop-shadow-lg transform transition hover:scale-105 duration-300"
               />
             </div>
           </div>

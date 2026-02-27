@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za/pricing",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za/pricing",
+  },
 };
 
 export default function PricingPage() {

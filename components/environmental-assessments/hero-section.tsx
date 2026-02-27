@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 export function AssessmentHeroSection() {
   return (
     <header className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/about.webp?height=500&width=1200"
           alt="Environmental specialist reviewing documents at site"
-          className="w-full h-full object-cover object-top opacity-80"
+          fill
+          className="object-cover object-top opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-primary/20" />
       </div>

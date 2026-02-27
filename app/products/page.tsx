@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za/products",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za/products",
+  },
 };
 
 export default function ProductsPage() {

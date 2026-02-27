@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za/waste-management",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za/waste-management",
+  },
 };
 
 export default function WasteManagementPage() {

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function CleaningProductsSection() {
   return (
     <section className="py-16 lg:py-24 bg-card">
@@ -23,11 +25,14 @@ export function CleaningProductsSection() {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-            <img
-              src="/placeholder.svg?height=400&width=400"
-              alt="Eco-friendly industrial cleaning supplies"
-              className="w-full max-w-md rounded-lg shadow-2xl object-cover"
-            />
+            <div className="w-full max-w-md relative aspect-square">
+              <Image
+                src="/placeholder.svg?height=400&width=400"
+                alt="Eco-friendly industrial cleaning supplies"
+                fill
+                className="rounded-lg shadow-2xl object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
