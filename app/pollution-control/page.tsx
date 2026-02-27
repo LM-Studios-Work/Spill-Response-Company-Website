@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za/pollution-control",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za/pollution-control",
+  },
 };
 
 export default function PollutionControlPage() {

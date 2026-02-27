@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 export function WasteHeroSection() {
   return (
     <section className="relative h-[500px] flex items-center">
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/waste.jpg?height=600&width=1200"
           alt="Industrial waste management facility with waste truck"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/20" />

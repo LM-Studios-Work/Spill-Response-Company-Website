@@ -14,9 +14,6 @@ export const metadata: Metadata = {
     "Leading environmental protection and hazardous spill remediation services. 24/7 Emergency Response, pollution control, waste management, and environmental assessments across South Africa. NEMA compliance.",
   generator: "v0.app",
   metadataBase: new URL("https://sssksolutions.co.za"),
-  alternates: {
-    canonical: "https://sssksolutions.co.za",
-  },
   keywords: [
     "spill response",
     "hazmat remediation",

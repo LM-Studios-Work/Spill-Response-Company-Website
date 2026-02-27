@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function ProductsHeroSection() {
   return (
     <section className="relative bg-primary h-[500px] overflow-hidden">
@@ -17,11 +19,12 @@ export function ProductsHeroSection() {
             <span className="material-icons ml-2">arrow_forward</span>
           </button>
         </div>
-        <div className="w-full lg:w-1/2 relative">
-          <img
+        <div className="w-full lg:w-1/2 relative h-64 lg:h-96">
+          <Image
             src="/productwal.webp?height=400&width=600"
             alt="Industrial warehouse setting with spill kits"
-            className="object-cover w-full h-64 lg:h-96 rounded-lg shadow-2xl opacity-90"
+            fill
+            className="object-cover rounded-lg shadow-2xl opacity-90"
           />
         </div>
       </div>

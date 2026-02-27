@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za/environmental-assessments",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za/environmental-assessments",
+  },
 };
 
 export default function EnvironmentalAssessmentsPage() {

@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 export function PollutionHeroSection() {
   return (
     <header className="relative bg-secondary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/pollution.jpg?height=500&width=1200"
           alt="Environmental specialist conducting water testing in a river"
-          className="w-full h-full object-cover opacity-50 mix-blend-overlay"
+          fill
+          className="object-cover opacity-50 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-transparent"></div>
       </div>

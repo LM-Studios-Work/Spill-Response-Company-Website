@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     url: "https://sssksolutions.co.za",
     type: "website",
   },
+  alternates: {
+    canonical: "https://sssksolutions.co.za",
+  },
 };
 
 export default function HomePage() {

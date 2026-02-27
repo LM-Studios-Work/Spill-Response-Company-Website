@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 export function TrainingHeroSection() {
   return (
     <header className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/training.webp?height=600&width=1200"
           alt="Industrial workers in safety gear managing a spill"
-          className="w-full h-full object-cover object-center"
+          fill
+          className="object-cover object-center"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/20 z-10" />
