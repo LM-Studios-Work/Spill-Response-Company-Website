@@ -182,7 +182,10 @@ export function ContactFormSection() {
               </div>
 
               {generalError && (
-                <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-800 flex items-center gap-2">
+                <div
+                  role="alert"
+                  className="mb-6 p-4 rounded-lg bg-red-50 border border-red-200 text-red-800 flex items-center gap-2"
+                >
                   <span className="material-icons text-red-600">error</span>
                   <p className="text-sm font-medium">{generalError}</p>
                 </div>
@@ -201,6 +204,9 @@ export function ContactFormSection() {
                     </span>
                     <input
                       type="text"
+                      aria-required="true"
+                      aria-invalid={!!errors.name}
+                      aria-describedby={errors.name ? "name-error" : undefined}
                       value={formData.name}
                       onChange={(e) => {
                         setFormData({ ...formData, name: e.target.value });
@@ -215,7 +221,11 @@ export function ContactFormSection() {
                       placeholder="Enter your full name"
                     />
                     {errors.name && (
-                      <span className="text-red-500 text-xs mt-1">
+                      <span
+                        id="name-error"
+                        role="alert"
+                        className="text-red-500 text-xs mt-1"
+                      >
                         {errors.name}
                       </span>
                     )}
@@ -244,6 +254,11 @@ export function ContactFormSection() {
                     </span>
                     <input
                       type="email"
+                      aria-required="true"
+                      aria-invalid={!!errors.email}
+                      aria-describedby={
+                        errors.email ? "email-error" : undefined
+                      }
                       value={formData.email}
                       onChange={(e) => {
                         setFormData({ ...formData, email: e.target.value });
@@ -258,7 +273,11 @@ export function ContactFormSection() {
                       placeholder="name@company.com"
                     />
                     {errors.email && (
-                      <span className="text-red-500 text-xs mt-1">
+                      <span
+                        id="email-error"
+                        role="alert"
+                        className="text-red-500 text-xs mt-1"
+                      >
                         {errors.email}
                       </span>
                     )}
@@ -269,6 +288,11 @@ export function ContactFormSection() {
                     </span>
                     <input
                       type="tel"
+                      aria-required="true"
+                      aria-invalid={!!errors.phone}
+                      aria-describedby={
+                        errors.phone ? "phone-error" : undefined
+                      }
                       value={formData.phone}
                       onChange={(e) => {
                         setFormData({ ...formData, phone: e.target.value });
@@ -283,7 +307,11 @@ export function ContactFormSection() {
                       placeholder="+27 ..."
                     />
                     {errors.phone && (
-                      <span className="text-red-500 text-xs mt-1">
+                      <span
+                        id="phone-error"
+                        role="alert"
+                        className="text-red-500 text-xs mt-1"
+                      >
                         {errors.phone}
                       </span>
                     )}
@@ -297,6 +325,11 @@ export function ContactFormSection() {
                   </span>
                   <div className="relative">
                     <select
+                      aria-required="true"
+                      aria-invalid={!!errors.service}
+                      aria-describedby={
+                        errors.service ? "service-error" : undefined
+                      }
                       value={formData.service}
                       onChange={(e) => {
                         setFormData({ ...formData, service: e.target.value });
@@ -326,7 +359,11 @@ export function ContactFormSection() {
                     </div>
                   </div>
                   {errors.service && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span
+                      id="service-error"
+                      role="alert"
+                      className="text-red-500 text-xs mt-1"
+                    >
                       {errors.service}
                     </span>
                   )}
@@ -339,6 +376,11 @@ export function ContactFormSection() {
                     <span className="text-red-500">*</span>
                   </span>
                   <textarea
+                    aria-required="true"
+                    aria-invalid={!!errors.message}
+                    aria-describedby={
+                      errors.message ? "message-error" : undefined
+                    }
                     value={formData.message}
                     onChange={(e) => {
                       setFormData({ ...formData, message: e.target.value });
@@ -353,7 +395,11 @@ export function ContactFormSection() {
                     placeholder="Describe your request or specific location details..."
                   ></textarea>
                   {errors.message && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span
+                      id="message-error"
+                      role="alert"
+                      className="text-red-500 text-xs mt-1"
+                    >
                       {errors.message}
                     </span>
                   )}
