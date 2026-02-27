@@ -179,11 +179,11 @@ export function Footer() {
             © 2026 SSSK Environmental Services. All Rights Reserved.
           </p>
           <div className="flex space-x-4">
-            <Link href="#" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-white">
-              Terms of Service
+            <Link href="/terms-of-use" className="hover:text-white">
+              Terms of Use
             </Link>
           </div>
         </div>
