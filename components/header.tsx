@@ -19,8 +19,15 @@ const SERVICE_LINKS = [
   { label: "Spill Kit Training", href: "/training" },
 ];
 
+const PRODUCT_LINKS = [
+  { label: "All Products", href: "/products" },
+  { label: "Spill Kits", href: "/products?category=Spill Kits" },
+  { label: "Absorbents", href: "/products?category=Absorbents" },
+  { label: "Containment", href: "/products?category=Containment" },
+  { label: "Safety & PPE", href: "/products?category=Safety & PPE" },
+];
+
 const OTHER_LINKS = [
-  { label: "Products", href: "/products" },
   { label: "Pricing", href: "/pricing" },
   { label: "Contact", href: "/contact" },
 ];
@@ -108,6 +115,33 @@ export function Header() {
               </div>
             </div>
 
+            {/* Products Dropdown */}
+            <div className="relative group cursor-pointer h-full flex items-center py-4">
+              <span className="flex items-center hover:text-primary transition-colors duration-200">
+                <Link href="/products" className="hover:text-primary">Products</Link>{" "}
+                <span className="material-icons text-sm ml-1">expand_more</span>
+              </span>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full -left-4 pt-2 w-72 hidden group-hover:block z-50">
+                <div className="bg-card shadow-xl rounded-md border border-gray-100 overflow-hidden flex flex-col">
+                  {PRODUCT_LINKS.map((product) => (
+                    <Link
+                      key={product.href}
+                      href={product.href}
+                      className={`block px-5 py-3 text-sm normal-case border-b border-gray-50 last:border-none hover:bg-gray-50 hover:text-primary transition-colors ${
+                        isActive(product.href)
+                          ? "text-primary bg-gray-50"
+                          : "text-foreground"
+                      }`}
+                    >
+                      {product.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {OTHER_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -188,6 +222,27 @@ export function Header() {
                   }`}
                 >
                   {service.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Products Section */}
+          <div className="mt-6">
+            <h3 className="text-xs font-bold uppercase text-gray-400 tracking-wider mb-3">
+              Our Products
+            </h3>
+            <div className="pl-4 border-l-2 border-gray-100 space-y-4">
+              {PRODUCT_LINKS.map((product) => (
+                <Link
+                  key={product.href}
+                  href={product.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block text-base font-medium ${
+                    isActive(product.href) ? "text-primary" : "text-gray-600"
+                  }`}
+                >
+                  {product.label}
                 </Link>
               ))}
             </div>
