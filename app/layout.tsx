@@ -79,6 +79,9 @@ export const metadata: Metadata = {
     ],
     apple: "/sssklogo.png",
   },
+  verification: {
+    google: "-lg7vIqzBHXUnwCzX8gDpc22_1o1vYk6YdeqhSCVWIM",
+  },
 };
 
 export default function RootLayout({
