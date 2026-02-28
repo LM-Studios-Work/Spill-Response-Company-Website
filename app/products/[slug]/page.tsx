@@ -141,6 +141,26 @@ export default async function ProductDetailPage(props: { params: Promise<{ slug:
             </div>
           </div>
 
+          {/* Other Categories Section */}
+          <div className="mt-16 border-t border-gray-200 pt-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 font-display text-center">Explore Other Product Categories</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { name: "Spill Kits", icon: "inventory_2", href: "/products?category=Spill Kits" },
+                { name: "Absorbents", icon: "water_drop", href: "/products?category=Absorbents" },
+                { name: "Containment", icon: "security", href: "/products?category=Containment" },
+                { name: "Safety & PPE", icon: "health_and_safety", href: "/products?category=Safety & PPE" },
+              ].map((cat) => (
+                <Link key={cat.name} href={cat.href} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all group flex flex-col items-center gap-3 text-center">
+                  <div className="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center group-hover:bg-[#FFD100] transition-colors">
+                    <span className="material-icons text-gray-600 group-hover:text-gray-900">{cat.icon}</span>
+                  </div>
+                  <span className="font-bold text-gray-900 text-sm md:text-base">{cat.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
       </main>
       <Footer />

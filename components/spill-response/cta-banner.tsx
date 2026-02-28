@@ -1,24 +1,58 @@
-export function CtaBanner() {
-  return (
-    <section className="bg-secondary text-white py-12">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        <div className="mb-6 md:mb-0 text-center md:text-left">
-          <h3 className="text-2xl md:text-3xl font-display font-bold uppercase mb-2">
-            Need Emergency Spill Response in Gauteng?
-          </h3>
-          <p className="text-sm text-gray-300">
-            As a leading hazmat cleanup company, we ensure immediate action as a legal requirement under Section 30 of NEMA.
-          </p>
+import Image from "next/image";
+import Link from "next/link";
 
-          <div className="mt-4 text-xl md:text-2xl font-bold font-display uppercase">
-            Call Our 24/7 Emergency Spill Response Team:{" "}
-            <a href="tel:0717881312" className="text-accent hover:text-yellow-300 transition">
-              071 788 1312
-            </a>
+export function SpillCtaBanner() {
+  return (
+    <section className="bg-secondary text-white py-12 border-t-8 border-accent">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex-1">
+            <h3 className="font-display text-2xl font-bold mb-2">
+              Need Emergency Spill Response in Gauteng?
+            </h3>
+            <p className="text-gray-300 mb-6">
+              As a leading hazmat cleanup company, we ensure immediate action as a legal requirement under Section 30 of NEMA.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 text-lg font-semibold">
+              <a
+                href="tel:0717881312"
+                className="flex items-center hover:text-accent transition-colors"
+              >
+                <span className="material-icons mr-2 text-accent">call</span>
+                071 788 1312
+              </a>
+              <a
+                href="mailto:info@sssksolutions.co.za"
+                className="flex items-center hover:text-accent transition-colors"
+              >
+                <span className="material-icons mr-2 text-accent">email</span>
+                info@sssksolutions.co.za
+              </a>
+            </div>
+          </div>
+          <div className="flex-shrink-0">
+            <div className="flex items-center gap-3 opacity-90">
+              <Link href="/" className="relative w-16 h-14 block">
+                <Image
+                  src="/sssklogo.png"
+                  alt="SSSK Environmental Services Logo"
+                  fill
+                  className="object-contain"
+                />
+              </Link>
+              <div className="flex flex-col text-white">
+                <span className="font-display font-bold text-2xl leading-none">
+                  SSSK
+                </span>
+                <span className="text-xs font-semibold tracking-wider">
+                  Environmental Services
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="hidden md:block opacity-20">
-          <span className="material-icons text-9xl">stars</span>
+        <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-gray-400 italic font-display">
+          Protecting Today. Preserving Tomorrow.
         </div>
       </div>
     </section>

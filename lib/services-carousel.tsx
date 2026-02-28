@@ -135,6 +135,11 @@ export function ServicesCarousel() {
 
   return (
     <section className="py-12 md:py-16 bg-background relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-display font-bold uppercase mb-2">View All Our Services</h2>
+        <p className="text-gray-300 max-w-2xl mx-auto">Comprehensive environmental solutions tailored for your business needs.</p>
+        <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded"></div>
+      </div>
       <div className="relative group">
         {/* Left Arrow */}
         <button

@@ -27,9 +27,26 @@ export default async function ProductsPage(props: { searchParams: Promise<{ [key
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-display">
               Our Products
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               Professional-grade spill control and environmental containment solutions.
             </p>
+            {!categoryFilter ? (
+              <div className="max-w-3xl mx-auto text-gray-700 bg-white p-6 rounded-xl shadow-md border border-gray-100 text-left md:text-center">
+                <p className="leading-relaxed text-sm md:text-base">
+                  <strong>SSSK Environmental Services</strong> offers a comprehensive range of industrial spill products. Available in sizes such as 240-liter and 120-liter variations, our wheelie bin spill kits go wherever your spill is. SSSK offers a range of specialized spill kits designed to be quick to clean up your chemical, oil, or acid spills. Ensure your facility remains safe and compliant with our professional products.
+                </p>
+              </div>
+            ) : (
+              <div className="mt-4 inline-flex items-center gap-2">
+                <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Category:</span>
+                <span className="inline-block bg-[#FFD100] text-gray-900 px-4 py-2 font-bold rounded-full uppercase shadow-sm">
+                  {categoryFilter}
+                </span>
+                <Link href="/products" className="ml-2 text-sm text-gray-500 hover:text-gray-900 underline">
+                  Clear Filter
+                </Link>
+              </div>
+            )}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

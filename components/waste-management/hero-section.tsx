@@ -2,33 +2,42 @@ import Image from "next/image";
 
 export function WasteHeroSection() {
   return (
-    <section className="relative h-[500px] flex items-center">
+    <header className="relative bg-secondary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/waste.jpg?height=600&width=1200"
+          src="/waste.jpg?height=500&width=1200"
           alt="Industrial waste management facility with waste truck"
           fill
-          className="object-cover"
+          className="object-cover opacity-50 mix-blend-overlay"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-transparent"></div>
       </div>
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/20" />
-      <div className="container mx-auto px-4 relative z-20 pt-16">
-        <div className="max-w-2xl text-white">
-          <h1 className="text-5xl md:text-6xl font-display font-bold leading-tight mb-6">
-            Industrial Waste Management
-            <br />& Hazardous Waste Disposal
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="lg:w-2/3">
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Industrial Waste Management <br className="hidden lg:block" />& Hazardous Waste Disposal
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl font-light">
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
             Environmentally responsible, cost-effective, and operationally efficient industrial waste management and hazardous waste disposal services for industries in Gauteng, South Africa.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-accent text-black hover:bg-yellow-400 font-bold py-4 px-8 rounded shadow-lg uppercase tracking-wide transition transform hover:-translate-y-1"
-          >
-            Get a Quote
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-md text-secondary bg-accent hover:bg-yellow-400 transition-colors shadow-lg"
+            >
+              Get a Quote
+            </a>
+            <a
+              href="tel:0717881312"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-md text-white border-2 border-white/30 hover:bg-white/10 transition-colors"
+            >
+              <span className="material-icons mr-2 text-accent">phone</span>
+              071 788 1312
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-  );
+    </header>
+  )
 }

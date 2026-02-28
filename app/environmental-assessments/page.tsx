@@ -39,9 +39,9 @@ export default function EnvironmentalAssessmentsPage() {
       <Header />
       <main>
         <AssessmentHeroSection />
-        <AssessmentCtaBanner />
         <NemaSection />
         <EiaSection />
+        <AssessmentCtaBanner />
         <ServicesCarousel />
       </main>
       <Footer />

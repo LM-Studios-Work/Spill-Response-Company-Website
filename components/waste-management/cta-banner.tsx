@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function AssessmentCtaBanner() {
+export function WasteCtaBanner() {
   return (
     <section className="bg-secondary text-white py-12 border-t-8 border-accent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex-1">
             <h3 className="font-display text-2xl font-bold mb-2">
-              Don't let paperwork be your downfall.
+              Looking for Reliable Waste Management Solutions?
             </h3>
             <p className="text-gray-300 mb-6">
-              Ensure your environmental reporting is accurate and audit-ready. Contact SSSK for Advisory Services today.
+              Contact us today for safe, efficient, and fully compliant hazardous and general waste disposal services.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 text-lg font-semibold">
               <a

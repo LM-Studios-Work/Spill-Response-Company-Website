@@ -2,34 +2,42 @@ import Image from "next/image";
 
 export function AssessmentHeroSection() {
   return (
-    <header className="relative bg-primary h-[500px] flex items-center overflow-hidden">
+    <header className="relative bg-secondary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/about.webp?height=500&width=1200"
           alt="Environmental specialist reviewing documents at site"
           fill
-          className="object-cover object-top opacity-80"
+          className="object-cover opacity-50 mix-blend-overlay"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-primary/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/90 to-transparent"></div>
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-            Environmental Assessments
-            <br />& Regulatory Reporting
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="lg:w-2/3">
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Environmental Assessments <br className="hidden lg:block" />& Regulatory Reporting
           </h1>
-          <p className="text-lg md:text-xl text-gray-100 mb-8 font-light max-w-xl">
-            Navigating the complexities of South African environmental law. We
-            ensure your documentation is accurate, thorough, and audit-ready.
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+            Navigating the complexities of South African environmental law. We ensure your documentation is accurate, thorough, and audit-ready.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-accent hover:bg-yellow-400 text-black font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:-translate-y-1 text-lg"
-          >
-            Get Regulatory Support
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-md text-secondary bg-accent hover:bg-yellow-400 transition-colors shadow-lg"
+            >
+              Get Regulatory Support
+            </a>
+            <a
+              href="tel:0717881312"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-md text-white border-2 border-white/30 hover:bg-white/10 transition-colors"
+            >
+              <span className="material-icons mr-2 text-accent">phone</span>
+              071 788 1312
+            </a>
+          </div>
         </div>
       </div>
     </header>
-  );
+  )
 }

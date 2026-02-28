@@ -4,6 +4,7 @@ import { WasteHeroSection } from "@/components/waste-management/hero-section";
 import { WasteIntroSection } from "@/components/waste-management/intro-section";
 import { WasteSplitSection } from "@/components/waste-management/split-section";
 import { WasteStrategySection } from "@/components/waste-management/strategy-section";
+import { WasteCtaBanner } from "@/components/waste-management/cta-banner";
 import { ServicesCarousel } from "@/lib/services-carousel";
 import type { Metadata } from "next";
 
@@ -42,6 +43,7 @@ export default function WasteManagementPage() {
         <WasteIntroSection />
         <WasteSplitSection />
         <WasteStrategySection />
+        <WasteCtaBanner />
         <ServicesCarousel />
       </main>
       <Footer />

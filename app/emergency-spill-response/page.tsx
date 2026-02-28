@@ -5,7 +5,7 @@ import { SpillHeroSection } from "@/components/spill-response/hero-section";
 import { IntroSection } from "@/components/spill-response/intro-section";
 import { ServicesGrid } from "@/components/spill-response/services-grid";
 import { ResponseProtocol } from "@/components/spill-response/response-protocol";
-import { CtaBanner } from "@/components/spill-response/cta-banner";
+import { SpillCtaBanner } from "@/components/spill-response/cta-banner";
 import { FaqSection } from "@/components/spill-response/faq-section";
 import { ImageIcon } from "lucide-react";
 import Image from "next/image";
@@ -48,7 +48,7 @@ export default function EmergencySpillResponsePage() {
         <ServicesGrid />
         <ResponseProtocol />
         <FaqSection />
-        <CtaBanner />
+        <SpillCtaBanner />
         <ServicesCarousel />
       </main>
       <Footer />
