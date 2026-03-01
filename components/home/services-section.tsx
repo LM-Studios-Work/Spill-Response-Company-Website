@@ -21,7 +21,7 @@ const services = [
   {
     title: "Waste Management",
     icon: "delete_outline",
-    image: "/waste.jpg",
+    image: "/waste.webp",
     description:
       "Integrated solutions for the safe disposal of industrial and hazardous waste in compliance with NEMA.",
     link: "/waste-management",
