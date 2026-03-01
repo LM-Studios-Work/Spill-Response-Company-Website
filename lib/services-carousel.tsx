@@ -26,7 +26,7 @@ const services = [
     description:
       "Integrated waste disposal solutions for hazardous and general waste streams.",
     icon: "delete",
-    image: "/waste.jpg?height=300&width=400",
+    image: "/waste.webp?height=300&width=400",
     href: "/waste-management",
   },
   {
