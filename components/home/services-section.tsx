@@ -2,26 +2,29 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Rapid Spill Response",
-    icon: "timelapse",
-    image: "/rapidr.webp?height=192&width=400",
-    tag: "Emergency",
+    title: "Emergency Spill Response",
+    icon: "warning", // or "timelapse"
+    image: "/rapidr.webp",
+    tag: "24/7",
     description:
-      "Guaranteed arrival times for spill containment. We minimize environmental impact through speed and efficiency.",
+      "Professional hazardous material containment and recovery for road, rail, and industrial incidents.",
+    link: "/emergency-spill-response",
   },
   {
-    title: "Fully Equipped Teams",
-    icon: "engineering",
+    title: "Pollution Control",
+    icon: "eco",
     image: "/equipped.webp?height=192&width=400",
     description:
-      "State-of-the-art spill kits, vacuums, and remediation technology operated by experienced hazmat technicians in compliance with regulations.",
+      "Specialized site remediation and contaminated land cleanup to restore environmental health.",
+    link: "/pollution-control",
   },
   {
-    title: "Safety & Compliance",
-    icon: "shield",
-    image: "/saftey.jpeg?height=192&width=400",
+    title: "Waste Management",
+    icon: "delete_outline",
+    image: "/waste.jpg",
     description:
-      "Full adherence to environmental laws. We provide detailed reporting for insurance and regulatory bodies.",
+      "Integrated solutions for the safe disposal of industrial and hazardous waste in compliance with NEMA.",
+    link: "/waste-management",
   },
 ];
 
@@ -72,7 +75,7 @@ export function ServicesSection() {
                   {service.description}
                 </p>
                 <a
-                  href="#"
+                  href={service.link}
                   className="text-primary font-bold text-sm uppercase flex items-center hover:underline"
                 >
                   Learn More{" "}
