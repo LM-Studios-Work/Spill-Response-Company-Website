@@ -1,12 +1,12 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export function PricingHeroSection() {
   return (
     <section className="relative bg-primary h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=500&width=1200"
-          alt="Businessmen shaking hands in industrial setting"
+          src="/retainer.webp?height=500&width=1200"
+          alt="Spill response retainer service hero image"
           fill
           className="object-cover object-center opacity-40"
         />
@@ -18,7 +18,8 @@ export function PricingHeroSection() {
             Cost-Effective Spill Response & Compliance Retainers
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 sm:mb-8 font-light">
-            Ensure 24/7 readiness and minimize financial risk with our flexible retainer packages.
+            Ensure 24/7 readiness and minimize financial risk with our flexible
+            retainer packages.
           </p>
           <a
             href="/contact"
@@ -29,5 +30,5 @@ export function PricingHeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

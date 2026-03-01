@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function PollutionHeroSection() {
   return (
-    <header className="relative bg-secondary h-[500px] flex items-center overflow-hidden">
+    <header className="relative bg-secondary h-[600px] sm:h-[500px] flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/pollution.jpg?height=500&width=1200"
@@ -16,10 +16,14 @@ export function PollutionHeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="lg:w-2/3">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
-            Environmental Pollution Control <br className="hidden lg:block" />& Site Remediation Services
+            Environmental Pollution Control <br className="hidden lg:block" />&
+            Site Remediation Services
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
-            As one of the leading environmental remediation companies in South Africa, we offer science-based solutions for contaminated land cleanup, soil remediation services, and watercourse pollution restoration.
+            As one of the leading environmental remediation companies in South
+            Africa, we offer science-based solutions for contaminated land
+            cleanup, soil remediation services, and watercourse pollution
+            restoration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -39,5 +43,5 @@ export function PollutionHeroSection() {
         </div>
       </div>
     </header>
-  )
+  );
 }
