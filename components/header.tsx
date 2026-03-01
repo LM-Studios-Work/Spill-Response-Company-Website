@@ -34,6 +34,8 @@ const OTHER_LINKS = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
@@ -41,6 +43,8 @@ export function Header() {
   // Close mobile menu when route changes
   useEffect(() => {
     setMobileMenuOpen(false);
+    setServicesOpen(false); // Reset dropdowns on navigation
+    setProductsOpen(false);
   }, [pathname]);
 
   // Lock body scroll when mobile menu is open
@@ -118,7 +122,9 @@ export function Header() {
             {/* Products Dropdown */}
             <div className="relative group cursor-pointer h-full flex items-center py-4">
               <span className="flex items-center hover:text-primary transition-colors duration-200">
-                <Link href="/products" className="hover:text-primary">Products</Link>{" "}
+                <Link href="/products" className="hover:text-primary">
+                  Products
+                </Link>{" "}
                 <span className="material-icons text-sm ml-1">expand_more</span>
               </span>
 
@@ -206,45 +212,81 @@ export function Header() {
             ))}
           </div>
 
-          {/* Services Section */}
-          <div className="mt-6">
-            <h3 className="text-xs font-bold uppercase text-gray-400 tracking-wider mb-3">
-              Our Services
-            </h3>
-            <div className="pl-4 border-l-2 border-gray-100 space-y-4">
-              {SERVICE_LINKS.map((service) => (
-                <Link
-                  key={service.href}
-                  href={service.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block text-base font-medium ${
-                    isActive(service.href) ? "text-primary" : "text-gray-600"
-                  }`}
-                >
-                  {service.label}
-                </Link>
-              ))}
+          {/* Mobile Services Accordion */}
+          <div className="border-b border-gray-100">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="flex items-center justify-between w-full py-4 text-lg font-semibold uppercase text-foreground focus:outline-none"
+            >
+              Services
+              <span
+                className={`material-icons transition-transform duration-200 ${
+                  servicesOpen ? "rotate-180" : ""
+                }`}
+              >
+                expand_more
+              </span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                servicesOpen ? "max-h-96 pb-4" : "max-h-0"
+              }`}
+            >
+              <div className="pl-4 border-l-2 border-primary/20 space-y-4">
+                {SERVICE_LINKS.map((service) => (
+                  <Link
+                    key={service.href}
+                    href={service.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block text-base font-medium ${
+                      isActive(service.href)
+                        ? "text-primary font-bold"
+                        : "text-gray-600"
+                    }`}
+                  >
+                    {service.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Products Section */}
-          <div className="mt-6">
-            <h3 className="text-xs font-bold uppercase text-gray-400 tracking-wider mb-3">
-              Our Products
-            </h3>
-            <div className="pl-4 border-l-2 border-gray-100 space-y-4">
-              {PRODUCT_LINKS.map((product) => (
-                <Link
-                  key={product.href}
-                  href={product.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block text-base font-medium ${
-                    isActive(product.href) ? "text-primary" : "text-gray-600"
-                  }`}
-                >
-                  {product.label}
-                </Link>
-              ))}
+          {/* Mobile Products Accordion */}
+          <div className="border-b border-gray-100">
+            <button
+              onClick={() => setProductsOpen(!productsOpen)}
+              className="flex items-center justify-between w-full py-4 text-lg font-semibold uppercase text-foreground focus:outline-none"
+            >
+              Products
+              <span
+                className={`material-icons transition-transform duration-200 ${
+                  productsOpen ? "rotate-180" : ""
+                }`}
+              >
+                expand_more
+              </span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                productsOpen ? "max-h-96 pb-4" : "max-h-0"
+              }`}
+            >
+              <div className="pl-4 border-l-2 border-primary/20 space-y-4">
+                {PRODUCT_LINKS.map((product) => (
+                  <Link
+                    key={product.href}
+                    href={product.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block text-base font-medium ${
+                      isActive(product.href)
+                        ? "text-primary font-bold"
+                        : "text-gray-600"
+                    }`}
+                  >
+                    {product.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 

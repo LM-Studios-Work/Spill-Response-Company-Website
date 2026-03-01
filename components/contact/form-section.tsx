@@ -147,24 +147,27 @@ export function ContactFormSection() {
         {/* LEFT COLUMN: Quote Form or Success View */}
         <div className="lg:col-span-7 flex flex-col">
           {isSuccess ? (
-            <div className="h-full flex flex-col items-center justify-center text-center p-8 rounded-2xl bg-green-50 border-2 border-green-100 animate-in fade-in zoom-in duration-300">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <span className="material-icons text-green-600 text-5xl">
-                  check
+            <div className="h-full flex flex-col items-center justify-center text-center p-10 rounded-2xl bg-primary text-white border-b-8 border-accent shadow-2xl animate-in fade-in zoom-in duration-500">
+              <div className="w-24 h-24 bg-accent rounded-full flex items-center justify-center mb-6 shadow-inner">
+                <span className="material-icons text-primary text-6xl">
+                  check_circle
                 </span>
               </div>
-              <h2 className="text-3xl font-bold text-green-800 mb-2">
-                Request Received!
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 uppercase tracking-tight">
+                Request Received
               </h2>
-              <p className="text-green-700 max-w-md mb-8">
-                Thank you, <strong>{formData.name}</strong>. We have received
-                your request regarding <strong>{formData.service}</strong>. An
-                environmental specialist will contact you at{" "}
-                <strong>{formData.email}</strong> shortly.
+              <div className="h-1 w-20 bg-accent mx-auto mb-6"></div>
+              <p className="text-gray-100 max-w-md mb-10 text-lg leading-relaxed">
+                Thank you,{" "}
+                <span className="text-accent font-bold">{formData.name}</span>.
+                Your inquiry regarding{" "}
+                <span className="font-semibold">{formData.service}</span> has
+                been logged. An environmental specialist will reach out to{" "}
+                <span className="italic">{formData.email}</span> shortly.
               </p>
               <button
                 onClick={handleReset}
-                className="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl"
+                className="bg-accent text-black font-display font-bold py-4 px-10 rounded-lg hover:bg-yellow-400 transition-all shadow-lg hover:scale-105 active:scale-95 uppercase tracking-widest"
               >
                 Send Another Request
               </button>
@@ -461,7 +464,10 @@ export function ContactFormSection() {
                 <p className="text-foreground-muted text-sm mt-1">
                   24/7 Helpline
                 </p>
-                <a href="tel:0717881312" className="text-foreground font-medium text-base sm:text-lg hover:text-primary transition">
+                <a
+                  href="tel:0717881312"
+                  className="text-foreground font-medium text-base sm:text-lg hover:text-primary transition"
+                >
                   071 788 1312
                 </a>
               </div>

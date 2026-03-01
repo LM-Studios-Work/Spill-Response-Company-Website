@@ -6,15 +6,19 @@ import { products } from "@/lib/data/products";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Industrial Spill Kits & Containment Products | SSSK Environmental Services",
-  description: "Explore our wide range of spill kits, absorbents, containment, and safety products for industrial applications.",
+  title:
+    "Industrial Spill Kits & Containment Products | SSSK Environmental Services",
+  description:
+    "Explore our wide range of spill kits, absorbents, containment, and safety products for industrial applications.",
 };
 
-export default async function ProductsPage(props: { searchParams: Promise<{ [key: string]: string | undefined }> }) {
+export default async function ProductsPage(props: {
+  searchParams: Promise<{ [key: string]: string | undefined }>;
+}) {
   const searchParams = await props.searchParams;
   const categoryFilter = searchParams.category;
-  
-  const filteredProducts = categoryFilter 
+
+  const filteredProducts = categoryFilter
     ? products.filter((p) => p.category === categoryFilter)
     : products;
 
@@ -28,21 +32,43 @@ export default async function ProductsPage(props: { searchParams: Promise<{ [key
               Our Products
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
-              Professional-grade spill control and environmental containment solutions.
+              Professional-grade spill control and environmental containment
+              solutions.
             </p>
             {!categoryFilter ? (
-              <div className="max-w-3xl mx-auto text-gray-700 bg-white p-6 rounded-xl shadow-md border border-gray-100 text-left md:text-center">
-                <p className="leading-relaxed text-sm md:text-base">
-                  <strong>SSSK Environmental Services</strong> offers a comprehensive range of industrial spill products. Available in sizes such as 240-liter and 120-liter variations, our wheelie bin spill kits go wherever your spill is. SSSK offers a range of specialized spill kits designed to be quick to clean up your chemical, oil, or acid spills. Ensure your facility remains safe and compliant with our professional products.
-                </p>
+              <div className="relative max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-xl">
+                {/* Hazard Stripe Accent */}
+                <div className="h-2 hazard-stripe w-full"></div>
+                <div className="bg-primary p-8 md:p-10 text-white border-x border-b border-primary-foreground/10">
+                  <p className="leading-relaxed text-base md:text-lg font-medium italic mb-4 text-accent">
+                    Industry-Leading Compliance & Protection
+                  </p>
+                  <p className="leading-relaxed text-sm md:text-base text-gray-100">
+                    <strong>SSSK Environmental Services</strong> offers a
+                    comprehensive range of industrial spill products. Available
+                    in sizes such as 240-liter and 120-liter variations, our
+                    wheelie bin spill kits go wherever your spill is. SSSK
+                    offers specialized kits designed for rapid cleanup of{" "}
+                    <span className="text-accent font-bold uppercase">
+                      chemical, oil, or acid spills
+                    </span>
+                    . Ensure your facility remains safe and compliant with our
+                    professional-grade remediation products.
+                  </p>
+                </div>
               </div>
             ) : (
               <div className="mt-4 inline-flex items-center gap-2">
-                <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Category:</span>
+                <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                  Category:
+                </span>
                 <span className="inline-block bg-[#FFD100] text-gray-900 px-4 py-2 font-bold rounded-full uppercase shadow-sm">
                   {categoryFilter}
                 </span>
-                <Link href="/products" className="ml-2 text-sm text-gray-500 hover:text-gray-900 underline">
+                <Link
+                  href="/products"
+                  className="ml-2 text-sm text-gray-500 hover:text-gray-900 underline"
+                >
                   Clear Filter
                 </Link>
               </div>
@@ -51,14 +77,17 @@ export default async function ProductsPage(props: { searchParams: Promise<{ [key
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col group">
+              <div
+                key={product.id}
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col group"
+              >
                 <div className="relative h-64 w-full bg-gray-100 flex items-center justify-center p-4">
                   {/* Using a placeholder visual if real image mapping is not yet done */}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                  <Image 
-                    src={product.image} 
-                    alt={product.name} 
-                    fill 
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
@@ -68,7 +97,7 @@ export default async function ProductsPage(props: { searchParams: Promise<{ [key
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="p-6 flex flex-col flex-grow">
                   <h2 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-[#FFD100] transition-colors line-clamp-2">
                     {product.name}
@@ -76,15 +105,15 @@ export default async function ProductsPage(props: { searchParams: Promise<{ [key
                   <p className="text-gray-600 mb-6 flex-grow line-clamp-3">
                     {product.shortDescription}
                   </p>
-                  
+
                   <div className="grid grid-cols-2 gap-4 mt-auto">
-                    <Link 
+                    <Link
                       href={`/products/${product.slug}`}
                       className="text-center px-4 py-2 border-2 border-gray-200 text-gray-700 rounded hover:bg-gray-50 hover:border-gray-300 font-semibold transition-colors"
                     >
                       View Details
                     </Link>
-                    <Link 
+                    <Link
                       href={`/enquire?product=${product.slug}`}
                       className="text-center px-4 py-2 bg-[#FFD100] text-black rounded hover:bg-yellow-500 font-bold transition-colors shadow-sm"
                     >

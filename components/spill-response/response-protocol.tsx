@@ -1,3 +1,4 @@
+import Link from "next/link";
 const protocolSteps = [
   {
     number: 1,
@@ -76,9 +77,9 @@ export function ResponseProtocol() {
                   Option A: Emergency Call-Out (Pay-as-used)
                 </h4>
                 <p className="text-sm text-foreground-muted">
-                  Ideal for operators in Gauteng requiring ad-hoc spill response. Charges
-                  are based on mobilization, personnel, equipment, materials
-                  used, and duration of response.
+                  Ideal for operators in Gauteng requiring ad-hoc spill
+                  response. Charges are based on mobilization, personnel,
+                  equipment, materials used, and duration of response.
                 </p>
               </div>
 
@@ -116,9 +117,12 @@ export function ResponseProtocol() {
             </div>
 
             <div className="mt-8">
-              <button className="bg-accent hover:bg-yellow-400 text-black font-display font-bold uppercase py-3 px-8 rounded shadow w-full md:w-auto transition-colors">
+              <Link
+                href="/pricing"
+                className="inline-block bg-accent hover:bg-yellow-400 text-black font-display font-bold uppercase py-3 px-8 rounded shadow w-full md:w-auto transition-colors text-center"
+              >
                 View Pricing & Retainers
-              </button>
+              </Link>
             </div>
           </div>
         </div>

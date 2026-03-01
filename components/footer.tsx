@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-background-dark text-white pt-12 sm:pt-16 pb-8 border-t border-gray-800">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 sm:gap-10 mb-8 sm:mb-12">
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           {/* Navigation and Services side by side */}
-          <div className="lg:col-span-2 flex flex-col sm:flex-row justify-between w-full">
+          <div className="lg:col-span-2 flex flex-col sm:flex-row justify-between w-full gap-10">
             {/* Navigation */}
             <div className="flex-1 min-w-[180px]">
               <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">
@@ -75,7 +75,7 @@ export function Footer() {
               </ul>
             </div>
             {/* Services */}
-            <div className="flex-1 min-w-[180px]">
+            <div className="flex-1 min-w-[180px] mt-8 sm:mt-0">
               <h3 className="font-display font-bold text-base sm:text-lg mb-4 uppercase text-gray-300">
                 Services
               </h3>

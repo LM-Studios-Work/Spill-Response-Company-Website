@@ -34,7 +34,7 @@ export function ServicesSection() {
           <h2 className="font-display text-4xl font-bold text-foreground mb-4 uppercase">
             Comprehensive Environmental Solutions
           </h2>
-          <p className="text-foreground-muted">
+          <p className="text-foreground text-lg font-medium leading-relaxed">
             We handle everything from initial damage assessment to structural
             remediation. Get a free quote today.
           </p>

@@ -31,8 +31,7 @@ const services = [
   },
   {
     title: "Environmental Assessments",
-    description:
-      "NEMA reporting and environmental impact assessments.",
+    description: "NEMA reporting and environmental impact assessments.",
     icon: "assignment",
     image: "/environment.webp?height=300&width=400",
     href: "/environmental-assessments",
@@ -135,10 +134,20 @@ export function ServicesCarousel() {
 
   return (
     <section className="py-12 md:py-16 bg-background relative">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center text-gray-900">
-        <h2 className="text-3xl md:text-4xl font-display font-bold uppercase mb-2">View All Our Services</h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">Comprehensive environmental solutions tailored for your business needs.</p>
-        <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-display font-bold uppercase mb-6 text-foreground tracking-tight">
+          View All Our <span className="text-primary">Services</span>
+        </h2>
+        {/* Styled container for better visibility */}
+        <div className="bg-primary/5 px-6 py-4 rounded-xl border border-primary/10 inline-block shadow-sm">
+          <p className="text-foreground text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto italic">
+            Comprehensive environmental solutions{" "}
+            <span className="text-primary font-bold underline decoration-accent underline-offset-4">
+              tailored for your business needs.
+            </span>
+          </p>
+        </div>
+        <div className="w-20 h-1.5 bg-accent mx-auto mt-8 rounded-full"></div>
       </div>
       <div className="relative group">
         {/* Left Arrow */}
