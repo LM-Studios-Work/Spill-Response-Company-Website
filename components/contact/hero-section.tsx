@@ -8,6 +8,8 @@ export function ContactHeroSection() {
           src="/hero2.webp?height=500&width=1200"
           alt="Environmental team on site"
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-20"
         />
       </div>

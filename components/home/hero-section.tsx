@@ -8,6 +8,8 @@ export function HeroSection() {
           src="/hero2.webp?height=800&width=1200"
           alt="Hazmat team cleaning spill"
           fill
+          priority
+          loading="eager"
           className="object-cover opacity-30 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-linear-to-r from-primary/95 via-primary/80 to-transparent"></div>
