@@ -100,7 +100,7 @@ export function ContactFormSection() {
     try {
       // 2. Send to FormSubmit
       const response = await fetch(
-        "https://formsubmit.co/ajax/austinmartin271@gmail.com",
+        "https://formsubmit.co/ajax/info@sssksolutions.co.za",
         {
           method: "POST",
           headers: {
