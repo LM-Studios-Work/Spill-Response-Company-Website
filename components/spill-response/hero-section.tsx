@@ -6,19 +6,21 @@ export function SpillHeroSection() {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
     >
-     <div className="container mx-auto px-4 py-12 lg:py-0 relative z-10">
+      <div className="container mx-auto px-4 py-8 lg:py-0 relative z-10">
         <div className="max-w-3xl">
           <div className="inline-block bg-accent text-black font-bold uppercase text-xs px-2 py-1 mb-4 rounded-sm tracking-wider">
             In compliance with NEMA
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white uppercase leading-tight mb-6 drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white uppercase leading-tight mb-4 drop-shadow-lg">
+            {" "}
             24/7 Emergency
             <br />
             Spill Response &
             <br />
             Hazmat Recovery Company
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-2xl drop-shadow-md">
+          <p className="text-base md:text-2xl text-gray-200 mb-6 font-light max-w-2xl drop-shadow-md">
+            {" "}
             Your trusted spill cleanup company in Gauteng. We offer rapid
             mobilization for Road, Rail, and Industrial incidents, providing
             24/7 hazardous material cleanup across South Africa.
