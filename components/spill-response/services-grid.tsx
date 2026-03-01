@@ -1,74 +1,60 @@
-import {
-  Truck,
-  Factory,
-  PackageOpen,
-  Waves,
-  FireExtinguisher,
-  Building2,
-  Fuel,
-  FlaskConical,
-  Biohazard,
-  Shovel,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-
-const roadTankerServices: { icon: LucideIcon; title: string; description: string }[] = [
+const roadTankerServices = [
   {
-    icon: Truck,
+    icon: "fa-solid fa-truck-moving",
     title: "Road Tanker Incidents:",
     description:
       "As a leading spill cleanup company, we offer comprehensive cleanup for tanker collisions and rollovers on major routes.",
   },
   {
-    icon: Factory,
+    icon: "fa-solid fa-industry",
     title: "Mechanical Failures:",
     description:
       "Containment of leaks caused by valve, hose, and manhole failures.",
   },
   {
-    icon: PackageOpen,
+    icon: "fa-solid fa-dolly",
     title: "Operational Spills:",
     description:
       "Managing accidental releases during loading and offloading operations.",
   },
   {
-    icon: Waves,
+    icon: "fa-solid fa-water",
     title: "Complex Environmental Risks:",
     description:
       "Remediation of soil, storm water, and watercourse contamination.",
   },
   {
-    icon: FireExtinguisher,
+    icon: "fa-solid fa-fire-extinguisher",
     title: "High-Consequence Events:",
     description:
       "Management of fire restoration, vapor releases, and secondary environmental impacts.",
   },
   {
-    icon: Building2,
+    icon: "fa-solid fa-city",
     title: "Historical & Industrial:",
     description:
       "Remediation of historical spills and contaminated land restoration.",
   },
 ];
 
-const hazmatCapabilities: { icon: LucideIcon; title: string; description: string }[] = [
+const hazmatCapabilities = [
   {
-    icon: Fuel,
+    icon: "fa-solid fa-oil-can",
     title: "Hydrocarbons:",
     description: "Diesel, Petrol, and Oil spills.",
   },
   {
-    icon: FlaskConical,
+    icon: "fa-solid fa-flask",
     title: "Chemicals:",
     description: "Acid spills and corrosive substances.",
   },
   {
-    icon: Biohazard,
+    icon: "fa-solid fa-biohazard",
     title: "Hazardous Waste:",
     description: "Safe collection and disposal of hazardous waste materials.",
   },
   {
-    icon: Shovel,
+    icon: "fa-solid fa-trowel",
     title: "Soil Treatment:",
     description:
       "Application of soil binders and bio-remediation for hydrocarbon-contaminated ground.",
@@ -86,24 +72,21 @@ export function ServicesGrid() {
               Road Spill Response Services & Industrial Spill Containment
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 mt-8">
-              {roadTankerServices.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <div key={service.title} className="flex gap-4">
-                    <div className="text-secondary shrink-0 pt-0.5">
-                      <Icon size={30} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-foreground uppercase text-sm mb-1">
-                        {service.title}
-                      </h4>
-                      <p className="text-sm text-foreground-muted leading-relaxed">
-                        {service.description}
-                      </p>
-                    </div>
+              {roadTankerServices.map((service) => (
+                <div key={service.title} className="flex gap-4">
+                  <div className="text-secondary shrink-0 pt-0.5">
+                    <i className={`${service.icon} text-3xl`}></i>
                   </div>
-                );
-              })}
+                  <div>
+                    <h4 className="font-bold text-foreground uppercase text-sm mb-1">
+                      {service.title}
+                    </h4>
+                    <p className="text-sm text-foreground-muted leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -116,24 +99,21 @@ export function ServicesGrid() {
               Hazmat Recovery Capabilities
             </h3>
             <div className="grid grid-cols-1 gap-y-8 mt-8">
-              {hazmatCapabilities.map((capability) => {
-                const Icon = capability.icon;
-                return (
-                  <div key={capability.title} className="flex gap-4">
-                    <div className="text-secondary shrink-0 pt-0.5">
-                      <Icon size={30} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-foreground uppercase text-sm mb-1">
-                        {capability.title}
-                      </h4>
-                      <p className="text-sm text-foreground-muted leading-relaxed">
-                        {capability.description}
-                      </p>
-                    </div>
+              {hazmatCapabilities.map((capability) => (
+                <div key={capability.title} className="flex gap-4">
+                  <div className="text-secondary shrink-0 pt-0.5">
+                    <i className={`${capability.icon} text-3xl`}></i>
                   </div>
-                );
-              })}
+                  <div>
+                    <h4 className="font-bold text-foreground uppercase text-sm mb-1">
+                      {capability.title}
+                    </h4>
+                    <p className="text-sm text-foreground-muted leading-relaxed">
+                      {capability.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
