@@ -1,7 +1,7 @@
 export function SpillHeroSection() {
   return (
     <section
-      className="relative bg-cover bg-center min-h-150 flex items-center"
+      className="relative bg-cover bg-center min-h-screen flex items-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
