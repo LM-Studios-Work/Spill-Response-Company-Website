@@ -34,6 +34,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="bg-background text-foreground">
+      {/* Preload LCP hero image so browser discovers and fetches it immediately */}
+      <link rel="preload" as="image" href="/hero2.webp" fetchPriority="high" />
       <Header />
       <main>
         <HeroSection />

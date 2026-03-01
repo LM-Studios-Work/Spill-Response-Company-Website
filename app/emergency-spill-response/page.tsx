@@ -41,6 +41,11 @@ export const metadata: Metadata = {
 export default function EmergencySpillResponsePage() {
   return (
     <div className="bg-background text-foreground">
+      {/* Font Awesome loaded only on this page where fa-* icons are used */}
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        rel="stylesheet"
+      />
       <Header />
       <main>
         <SpillHeroSection />

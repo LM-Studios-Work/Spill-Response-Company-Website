@@ -103,12 +103,10 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/sssklogo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
           rel="stylesheet"
         />
         {/* JSON-LD Schema for Organization */}
