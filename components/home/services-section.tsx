@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Rapid Response",
     title: "Rapid Spill Response",
     icon: "timelapse",
     image: "/rapidr.webp?height=192&width=400",
