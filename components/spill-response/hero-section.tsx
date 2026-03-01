@@ -1,12 +1,12 @@
 export function SpillHeroSection() {
   return (
     <section
-      className="relative bg-cover bg-center min-h-screen flex items-center"
+      className="relative bg-cover bg-center min-h-[calc(100svh-80px)] flex items-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero1.webp?height=600&width=1200')`,
       }}
     >
-      <div className="container mx-auto px-4 py-20 relative z-10">
+     <div className="container mx-auto px-4 py-12 lg:py-0 relative z-10">
         <div className="max-w-3xl">
           <div className="inline-block bg-accent text-black font-bold uppercase text-xs px-2 py-1 mb-4 rounded-sm tracking-wider">
             In compliance with NEMA
