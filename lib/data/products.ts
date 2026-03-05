@@ -14,87 +14,108 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "p1",
-    slug: "20l-vehicle-spill-kit",
-    name: "20L Vehicle Spill Kit",
-    category: "Spill Kits",
-    image: "/images/placeholders/spill-kit-20l.jpg", // Using placeholders
-    shortDescription: "Compact 20L spill kit ideal for trucks and light commercial vehicles.",
-    longDescription: "The 20L Vehicle Spill Kit is designed for quick response to minor hydrocarbon or chemical spills. Its compact zipper bag makes it easy to store behind the seat or in the trunk of a vehicle, ensuring you are always prepared for an emergency leak or spill.",
-    specifications: [
-      { label: "Absorption Capacity", value: "20 Liters" },
-      { label: "Application", value: "Oil / Fuel / Universal" },
-      { label: "Container", value: "High-Visibility Zipper Bag" },
-      { label: "Weight", value: "3.5 kg" }
-    ],
-    features: [
-      "Compact design fits in most vehicles",
-      "High-visibility safety yellow bag",
-      "Includes absorbent pads, socks, and disposal bags",
-      "Fast-acting particulate absorbents"
-    ]
-  },
-  {
-    id: "p2",
-    slug: "240l-mobile-spill-kit",
-    name: "240L Mobile Spill Kit",
-    category: "Spill Kits",
-    image: "/images/placeholders/spill-kit-240l.jpg",
-    shortDescription: "High-capacity mobile wheelie bin spill kit for factories and workshops.",
-    longDescription: "Our 240L Mobile Spill Kit provides a comprehensive response to medium-to-large spills in industrial environments. Housed in a durable, easy-to-move wheelie bin, it contains a variety of absorbents handling oil, coolant, and mild chemical spills.",
-    specifications: [
-      { label: "Absorption Capacity", value: "240 Liters" },
-      { label: "Application", value: "Universal / Oil-Only options" },
-      { label: "Container", value: "240L Wheelie Bin" },
-      { label: "Weight", value: "45 kg" }
-    ],
-    features: [
-      "Easily mobile on durable wheels",
-      "Weather-proof container",
-      "Includes high-volume absorbent booms and pillows",
-      "PPE included for safe responder handling"
-    ]
-  },
-  {
-    id: "p3",
-    slug: "oil-absorbent-pads",
-    name: "Oil Absorbent Pads (Pack of 100)",
+    id: "a1",
+    slug: "chemical-absorbent-mat-rolls",
+    name: "Chemical Absorbent Mat Rolls",
     category: "Absorbents",
-    image: "/images/placeholders/absorbent-pads.jpg",
-    shortDescription: "Fast-wicking, highly absorbent pads for targeted oil and fuel spills.",
-    longDescription: "These premium oil-absorbent pads are hydrophobic, meaning they will absorb oil and repel water, making them perfect for marine or wet-weather applications. They are perforated for easy tearing to use only what you need.",
+    image: "/Products/Absorbants/Chemical Absorbent Mat Rolls.webp",
+    shortDescription: "Heavy-duty chemical absorbent mat rolls for aggressive chemical and solvent spills.",
+    longDescription: "Our Chemical Absorbent Mat Rolls are engineered to handle a wide range of hazardous chemicals, acids, and solvents. The meltblown polypropylene construction makes them resistant to most aggressive fluids while providing superior absorption capacity. Ideal for use in chemical plants, laboratories, and industrial workshops.",
     specifications: [
-      { label: "Dimensions", value: "40cm x 50cm" },
-      { label: "Quantity", value: "100 Pads / Bale" },
-      { label: "Absorption Capacity", value: "up to 120L per bale" },
-      { label: "Material", value: "Meltblown Polypropylene" }
+      { label: "Application", value: "Chemicals, Acids, Solvents, Coolants" },
+      { label: "Material", value: "Meltblown Polypropylene" },
+      { label: "Format", value: "Roll" },
+      { label: "Colour", value: "Pink / Grey" }
     ],
     features: [
-      "Floats on water to absorb oil",
-      "Dimpled pattern for faster wicking",
-      "Perforated down the center",
-      "Bright white color makes absorbed oil visible"
+      "Resists a broad range of aggressive chemicals and solvents",
+      "High absorption capacity per roll",
+      "Easy to cut and tear to required size",
+      "Suitable for use in chemical storage and laboratory areas"
     ]
   },
   {
-    id: "p4",
-    slug: "4-drum-spill-pallet",
-    name: "4-Drum Spill Pallet",
-    category: "Containment",
-    image: "/images/placeholders/spill-pallet.jpg",
-    shortDescription: "Heavy-duty spill pallet for safe storage of up to four 210L drums.",
-    longDescription: "Ensure EPA and local environmental compliance with our 4-Drum Spill Pallet. Constructed from high-density polyethylene (HDPE), it resists harsh chemicals and rust while capturing leaks and drips from stored drums.",
+    id: "a2",
+    slug: "oil-only-absorbent-pillow",
+    name: "Oil Only Absorbent Pillow",
+    category: "Absorbents",
+    image: "/Products/Absorbants/Oil only absorbant pillow.webp",
+    shortDescription: "Hydrophobic absorbent pillow that absorbs oil and repels water — ideal for wet environments.",
+    longDescription: "The Oil Only Absorbent Pillow uses hydrophobic polypropylene fibres to selectively absorb hydrocarbons while repelling water. Perfect for use in sumps, bilges, drains, and any environment where water is present alongside oil or fuel. The pillow shape allows it to sit in corners or tight spaces where flat pads cannot reach.",
     specifications: [
-      { label: "Sump Capacity", value: "250 Liters" },
-      { label: "Load Capacity", value: "3000 kg (UDL)" },
-      { label: "Dimensions", value: "1280mm x 1280mm x 275mm" },
-      { label: "Material", value: "100% Recyclable Polyethylene" }
+      { label: "Application", value: "Oil, Fuel, Hydraulic Fluid" },
+      { label: "Material", value: "Hydrophobic Polypropylene" },
+      { label: "Colour", value: "White" },
+      { label: "Usage", value: "Sumps, Drains, Bilges" }
     ],
     features: [
-      "Removable grates for easy cleaning",
-      "Forklift pockets for safe positioning (when empty)",
-      "UV-resistant for outdoor storage",
-      "Exceeds environmental secondary containment regulations"
+      "Absorbs oil and fuels while repelling water",
+      "Floats on water surface to target hydrocarbon slicks",
+      "Ideal for sumps, bilges, and outdoor drains",
+      "Durable outer skin prevents tearing during use"
+    ]
+  },
+  {
+    id: "a3",
+    slug: "spill-pillow-1x1m",
+    name: "Spill Pillow 1m x 1m (with Rope & Liner)",
+    category: "Absorbents",
+    image: "/Products/Absorbants/SpillPillow_1x1m with rope and plastic liner.webp",
+    shortDescription: "Large-format 1m x 1m spill pillow with retrieval rope and plastic liner for major spill containment.",
+    longDescription: "Designed for large industrial spills, this 1m x 1m Spill Pillow offers high-volume absorption in a single unit. It comes complete with a plastic liner to prevent leaching and a retrieval rope for safe recovery from sumps, pits, and drainage channels without direct contact. A practical and safe solution for major spill response.",
+    specifications: [
+      { label: "Dimensions", value: "1m x 1m" },
+      { label: "Includes", value: "Plastic Liner & Retrieval Rope" },
+      { label: "Application", value: "Universal — Oil, Chemical, Coolant" },
+      { label: "Material", value: "Polypropylene Fill" }
+    ],
+    features: [
+      "Large 1m x 1m coverage for major spills",
+      "Retrieval rope allows safe hands-free recovery",
+      "Plastic liner prevents fluid leaching into surrounding area",
+      "Suitable for sump pits, drains, and containment bays"
+    ]
+  },
+  {
+    id: "a4",
+    slug: "universal-absorbent-roll-heavy-duty",
+    name: "Universal Absorbent Roll (Heavy Duty)",
+    category: "Absorbents",
+    image: "/Products/Absorbants/Universal-absorbent-roll-heavy-ARUH30150.webp",
+    shortDescription: "Heavy-duty universal absorbent roll for oils, coolants, water, and mild chemicals.",
+    longDescription: "The Universal Absorbent Roll (Heavy Duty) is the go-to consumable for industrial maintenance. Its extra-thick construction delivers excellent absorption for oils, coolants, water, and mild chemicals. Available on a perforated roll, it can be torn to the exact length needed — reducing waste and ensuring you only use what you need.",
+    specifications: [
+      { label: "Application", value: "Universal — Oil, Water, Coolant, Mild Chemical" },
+      { label: "Format", value: "Perforated Roll" },
+      { label: "Grade", value: "Heavy Duty" },
+      { label: "Colour", value: "Grey" }
+    ],
+    features: [
+      "Heavy-duty grade for high-volume spills",
+      "Perforated roll — tear to the length required",
+      "Absorbs oils, coolants, water, and mild chemicals",
+      "Grey colour hides contamination, extending usable life"
+    ]
+  },
+  {
+    id: "a5",
+    slug: "universal-absorbent-pads",
+    name: "Universal Absorbent Pads",
+    category: "Absorbents",
+    image: "/Products/Absorbants/universal absorbent pads.webp",
+    shortDescription: "Versatile absorbent pads for everyday spill control of oils, coolants, and water-based fluids.",
+    longDescription: "Universal Absorbent Pads are an essential item in any spill kit or maintenance workshop. They absorb virtually all industrial fluids — oils, coolants, solvents, and water — making them the most versatile absorbent product available. Their dimpled surface wicks fluids rapidly while the outer layer holds absorbed fluid securely, preventing drips during disposal.",
+    specifications: [
+      { label: "Application", value: "Universal — Oil, Water, Coolant, Chemical" },
+      { label: "Material", value: "Meltblown Polypropylene" },
+      { label: "Colour", value: "Grey" },
+      { label: "Format", value: "Flat Pad / Bale" }
+    ],
+    features: [
+      "Absorbs all common industrial fluids",
+      "Dimpled surface for rapid fluid wicking",
+      "Secure outer layer prevents drips during handling and disposal",
+      "Suitable for spill kits, workshops, and general maintenance"
     ]
   }
 ];
