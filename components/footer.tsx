@@ -190,6 +190,18 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        <p className="mt-4 text-center text-[10px] tracking-wide text-gray-600">
+          Designed by{" "}
+          <a
+            href="https://www.lmwebdesign.co.za/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors"
+          >
+            LMWebdesign
+          </a>
+        </p>
       </div>
     </footer>
   );
