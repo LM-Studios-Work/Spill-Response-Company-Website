@@ -65,14 +65,14 @@ export function Header() {
         {/* --- LOGO --- */}
         <Link href="/" className="flex items-center shrink-0 relative z-50">
           {/* Responsive container for the logo */}
-          <div className="relative w-39 h-13 lg:w-44 lg:h-12 transition-all duration-300">
+          <div className="relative w-44 h-14 lg:w-52 lg:h-16 transition-all duration-300">
             <Image
               src="/sssklogo.png"
               alt="SSSK Logo"
               fill
               className="object-contain object-left"
               priority
-              sizes="(max-width: 768px) 128px, 176px"
+              sizes="(max-width: 768px) 160px, 208px"
             />
           </div>
         </Link>

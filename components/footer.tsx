@@ -8,9 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 sm:gap-10 mb-8 sm:mb-12">
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <h2 className="font-display font-bold text-xl sm:text-2xl uppercase">
-                <Link href="/" className="relative w-28 h-20 block">
+            <div className="flex items-center space-x-3 mb-4">
+              <h2 className="font-display font-bold text-xl sm:text-2xl uppercase flex items-center gap-3">
+                <Link href="/" className="relative w-36 h-24 sm:w-44 sm:h-28 block">
                   <Image
                     src="/sssklogo.png"
                     alt="SSSK Environmental Services Logo"
@@ -18,7 +18,7 @@ export function Footer() {
                     className="object-contain"
                   />
                 </Link>
-                SSSK Environmental
+                <span>SSSK Environmental</span>
               </h2>
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 max-w-sm text-sm sm:text-base">
