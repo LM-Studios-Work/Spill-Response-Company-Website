@@ -18,7 +18,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-0 min-h-[calc(100svh-80px)] relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div className="space-y-4 lg:space-y-5">
           <div className="inline-block px-3 py-1 bg-accent text-black font-bold text-xs uppercase tracking-widest rounded mb-2">
-            In compliance with NEMA
+            SSSK Environmental Services
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             SPILL RESPONSE <br />
